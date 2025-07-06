@@ -1,0 +1,1 @@
+// flex flex-col md:flex-row bg-cover bg-center bg-slate-700 w-full h-screen text-white"
