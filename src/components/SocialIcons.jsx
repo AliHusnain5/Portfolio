@@ -32,25 +32,11 @@ const SocialIcons = () => {
               </div> 
     
             
-             <div className="flex mt-4 gap-4">
-                {[FaFacebookF, FaPinterestP, FaInstagram, IoLogoGoogle].map(
-                  (Icon, i) => (
-                    <div
-                      key={i}
-                      className="group relative py-3 px-3 border rounded-2xl cursor-pointer flex flex-col items-center transition-transform duration-300 hover:-translate-y-2"
-                    >
-                      <Icon className="w-6 h-6 text-white" />
-                      <span className="absolute top-[110%] opacity-0 group-hover:opacity-100 transition-opacity text-sm bg-black text-white px-2 py-1 rounded-md mt-1 whitespace-nowrap z-10">
-                        {Icon.name.replace("Fa", "")}
-                      </span>
-                    </div>
-                  )
-                )}
-              </div> 
+             
     
             
               <div
-                onClick={scrollToContact}
+                
                 className="py-3 px-4 mt-4 text-xl bg-red-500 rounded-2xl cursor-pointer hover:bg-red-600 transition text-center w-full"
               >
                 Let's Work Together!
