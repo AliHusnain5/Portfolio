@@ -88,7 +88,7 @@ const HomePage = () => {
       className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center"
     >
     
-      {/* <div className="w-full md:w-1/3 flex justify-center p-4 mt-15">
+       <div className="w-full md:w-1/3 flex justify-center p-4 mt-15">
         <div className="w-full max-w-[400px] bg-slate-500/50 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[80vh] p-4">
           
           <div className="mt-4 flex flex-row items-center justify-center gap-4">
@@ -141,7 +141,7 @@ const HomePage = () => {
             Let's Work Together!
           </div>
         </div>
-      </div> */}
+      </div> 
 
       {/* Right Content */}
       <div className="relative w-full md:w-3/4 flex flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
@@ -232,9 +232,9 @@ const HomePage = () => {
         </div>
 
         {/* For Component */}
-        <div className="flex justify-end w-full mt-10">
+         <div className="flex justify-end w-full mt-10">
           <For />
-        </div>
+        </div> 
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 mt-6">
@@ -262,7 +262,7 @@ const HomePage = () => {
         </div>
 
         {/* Sections */}
-        {/* <div className="mt-20 space-y-20">
+         <div className="mt-20 space-y-20">
           <div id="portfolio" className="min-h-screen w-full scroll-mt-36">
             <Portfolio />
           </div>
@@ -275,7 +275,7 @@ const HomePage = () => {
           <div id="contact" className="min-h-screen w-full scroll-mt-36">
             <Contact />
           </div>
-        </div> */}
+        </div> 
       </div>
     </section>
   );
