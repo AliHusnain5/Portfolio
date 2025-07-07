@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Portfolio from "./Portfolio";
-import For from "./For";
-import AboutMe from "./AboutMe";
-import Resume from "./Resume";
-import Contact from "./Contact";
+// import For from "./For";
+// import AboutMe from "./AboutMe";
+// import Resume from "./Resume";
+// import Contact from "./Contact";
 
 import {
   FaDownload,
@@ -232,9 +232,9 @@ const HomePage = () => {
         </div>
 
         {/* For Component */}
-         <div className="flex justify-end w-full mt-10">
+         {/* <div className="flex justify-end w-full mt-10">
           <For />
-        </div> 
+        </div>  */}
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 mt-6">
@@ -262,7 +262,7 @@ const HomePage = () => {
         </div>
 
         {/* Sections */}
-         <div className="mt-20 space-y-20">
+         {/* <div className="mt-20 space-y-20">
           <div id="portfolio" className="min-h-screen w-full scroll-mt-36">
             <Portfolio />
           </div>
@@ -275,7 +275,7 @@ const HomePage = () => {
           <div id="contact" className="min-h-screen w-full scroll-mt-36">
             <Contact />
           </div>
-        </div> 
+        </div>  */}
       </div>
     </section>
   );
