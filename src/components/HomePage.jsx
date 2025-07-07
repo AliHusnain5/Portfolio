@@ -87,8 +87,8 @@ const HomePage = () => {
       id="home"
       className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center"
     >
-      ali
-{/*     
+      
+     
        <div className="w-full md:w-1/3 flex justify-center p-4 mt-15">
         <div className="w-full max-w-[400px] bg-slate-500/50 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[80vh] p-4">
           
@@ -142,7 +142,7 @@ const HomePage = () => {
             Let's Work Together!
           </div>
         </div>
-      </div>  */}
+      </div>  
 
       {/* Right Content */}
       <div className="relative w-full md:w-3/4 flex flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
