@@ -1,8 +1,8 @@
 // src/App.jsx
 import React, { useEffect, useState } from 'react';
-import Loader from './components/Loader';
-// import HomePage from './components/HomePage';
-import SocialIcons from './components/SocialIcons';
+// import Loader from './components/Loader';
+import HomePage from './components/HomePage';
+// import SocialIcons from './components/SocialIcons';
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -22,7 +22,7 @@ function App() {
       
 
       
-      <SocialIcons/>
+      <HomePage/>
     </div>
   );
 }

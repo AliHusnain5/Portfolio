@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Portfolio from "./Portfolio";
-// import For from "./For";
-// import AboutMe from "./AboutMe";
-// import Resume from "./Resume";
-// import Contact from "./Contact";
+import For from "./For";
+import AboutMe from "./AboutMe";
+import Resume from "./Resume";
+import Contact from "./Contact";
 
 import {
   FaDownload,
@@ -88,7 +88,7 @@ const HomePage = () => {
       className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center"
     >
       
-{/*      
+     
        <div className="w-full md:w-1/3 flex justify-center p-4 mt-15">
         <div className="w-full max-w-[400px] bg-slate-500/50 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[80vh] p-4">
           
@@ -142,12 +142,12 @@ const HomePage = () => {
             Let's Work Together!
           </div>
         </div>
-      </div>   */}
+      </div>  
 
       {/* Right Content */}
       <div className="relative w-full md:w-3/4 flex flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
         {/* Mobile Navbar */}
-        {/* <div className="md:hidden fixed top-5 z-50 w-full px-1 py-3 bg-black/30 backdrop-blur-md">
+         <div className="md:hidden fixed top-5 z-50 w-full px-1 py-3 bg-black/30 backdrop-blur-md">
           <div className="flex w-fit min-w-full justify-start gap-5 text-xs font-medium overflow-x-auto scrollbar-hide">
             {menuItems.map((item, index) => {
               const id = getId(item);
@@ -179,10 +179,10 @@ const HomePage = () => {
               );
             })}
           </div>
-        </div> */}
+        </div> 
 
         {/* Desktop Navbar */}
-        {/* <div className="hidden md:flex fixed top-5 z-50 w-full md:w-3/4 px-2 py-3 backdrop-blur-md justify-start gap-6 text-sm sm:text-base md:text-xl font-medium">
+         <div className="hidden md:flex fixed top-5 z-50 w-full md:w-3/4 px-2 py-3 backdrop-blur-md justify-start gap-6 text-sm sm:text-base md:text-xl font-medium">
           {menuItems.map((item, index) => {
             const id = getId(item);
             return (
@@ -210,10 +210,10 @@ const HomePage = () => {
               </a>
             );
           })}
-        </div> */}
+        </div>
 
         {/* Hero Section */}
-        {/* <div className="mt-[60px]">
+         <div className="mt-[60px]">
           <span className="bg-black text-white inline-flex justify-center items-center py-2 px-6 text-sm sm:text-lg rounded-2xl gap-2">
             <span>⭐</span>
             Let's meet!
@@ -230,15 +230,15 @@ const HomePage = () => {
               Developer
             </span>
           </h1>
-        </div> */}
+        </div> 
 
         {/* For Component */}
-         {/* <div className="flex justify-end w-full mt-10">
+          <div className="flex justify-end w-full mt-10">
           <For />
-        </div>  */}
+        </div> 
 
         {/* Buttons */}
-        {/* <div className="flex flex-wrap gap-4 mt-6">
+         <div className="flex flex-wrap gap-4 mt-6">
           <button className="group relative overflow-hidden border border-white w-full sm:w-40 h-16 rounded-4xl text-lg font-medium">
             <div className="h-32 flex flex-col transition-transform duration-300 group-hover:-translate-y-16">
               <span className="h-16 flex items-center justify-center gap-2">
@@ -260,10 +260,10 @@ const HomePage = () => {
               </span>
             </div>
           </button>
-        </div> */}
+        </div> 
 
         {/* Sections */}
-         {/* <div className="mt-20 space-y-20">
+          <div className="mt-20 space-y-20">
           <div id="portfolio" className="min-h-screen w-full scroll-mt-36">
             <Portfolio />
           </div>
@@ -276,7 +276,7 @@ const HomePage = () => {
           <div id="contact" className="min-h-screen w-full scroll-mt-36">
             <Contact />
           </div>
-        </div>  */}
+        </div>  
       </div>
     </section>
   );
