@@ -146,7 +146,7 @@ const HomePage = () => {
       {/* Right Content */}
       <div className="relative w-full md:w-3/4 flex flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
         {/* Mobile Navbar */}
-        <div className="md:hidden fixed top-5 z-50 w-full px-1 py-3 bg-black/30 backdrop-blur-md">
+        {/* <div className="md:hidden fixed top-5 z-50 w-full px-1 py-3 bg-black/30 backdrop-blur-md">
           <div className="flex w-fit min-w-full justify-start gap-5 text-xs font-medium overflow-x-auto scrollbar-hide">
             {menuItems.map((item, index) => {
               const id = getId(item);
@@ -178,10 +178,10 @@ const HomePage = () => {
               );
             })}
           </div>
-        </div>
+        </div> */}
 
         {/* Desktop Navbar */}
-        <div className="hidden md:flex fixed top-5 z-50 w-full md:w-3/4 px-2 py-3 backdrop-blur-md justify-start gap-6 text-sm sm:text-base md:text-xl font-medium">
+        {/* <div className="hidden md:flex fixed top-5 z-50 w-full md:w-3/4 px-2 py-3 backdrop-blur-md justify-start gap-6 text-sm sm:text-base md:text-xl font-medium">
           {menuItems.map((item, index) => {
             const id = getId(item);
             return (
@@ -209,7 +209,7 @@ const HomePage = () => {
               </a>
             );
           })}
-        </div>
+        </div> */}
 
         {/* Hero Section */}
         <div className="mt-[60px]">
