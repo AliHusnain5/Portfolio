@@ -87,10 +87,10 @@ const HomePage = () => {
       id="home"
       className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center"
     >
-      {/* Left Sidebar */}
-      <div className="w-full md:w-1/3 flex justify-center p-4 mt-15">
+    
+      {/* <div className="w-full md:w-1/3 flex justify-center p-4 mt-15">
         <div className="w-full max-w-[400px] bg-slate-500/50 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[80vh] p-4">
-          {/* Avatar and Name */}
+          
           <div className="mt-4 flex flex-row items-center justify-center gap-4">
             <div className="flex items-center justify-center h-20 w-14 rounded-[40px] border-2 border-white">
               <span className="text-6xl font-extrabold">A</span>
@@ -100,7 +100,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Profile Image */}
+          
           <div
             className="h-[180px] w-[180px] sm:h-[200px] sm:w-[200px] md:h-[280px] md:w-[280px] mt-4 bg-cover bg-center bg-no-repeat bg-amber-300 rounded-[40px]"
             style={{
@@ -108,7 +108,7 @@ const HomePage = () => {
             }}
           ></div>
 
-          {/* Bio Info */}
+          
           <div className="text-center mt-4 text-xl">
             <p className="text-gray-400">Specialization:</p>
             <p className="-mt-2">Mern-Stack-Developer</p>
@@ -116,7 +116,7 @@ const HomePage = () => {
             <p className="-mt-2">Lahore, Pakistan</p>
           </div>
 
-          {/* Social Icons */}
+        
           <div className="flex mt-4 gap-4">
             {[FaFacebookF, FaPinterestP, FaInstagram, IoLogoGoogle].map(
               (Icon, i) => (
@@ -133,7 +133,7 @@ const HomePage = () => {
             )}
           </div>
 
-          {/* CTA Button */}
+        
           <div
             onClick={scrollToContact}
             className="py-3 px-4 mt-4 text-xl bg-red-500 rounded-2xl cursor-pointer hover:bg-red-600 transition text-center w-full"
@@ -141,7 +141,7 @@ const HomePage = () => {
             Let's Work Together!
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Right Content */}
       <div className="relative w-full md:w-3/4 flex flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
