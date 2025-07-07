@@ -212,7 +212,7 @@ const HomePage = () => {
         </div> */}
 
         {/* Hero Section */}
-        <div className="mt-[60px]">
+        {/* <div className="mt-[60px]">
           <span className="bg-black text-white inline-flex justify-center items-center py-2 px-6 text-sm sm:text-lg rounded-2xl gap-2">
             <span>⭐</span>
             Let's meet!
@@ -229,7 +229,7 @@ const HomePage = () => {
               Developer
             </span>
           </h1>
-        </div>
+        </div> */}
 
         {/* For Component */}
          {/* <div className="flex justify-end w-full mt-10">
