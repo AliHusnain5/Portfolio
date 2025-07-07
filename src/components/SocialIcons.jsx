@@ -4,7 +4,7 @@ const SocialIcons = () => {
   return (
     
            <div className="w-full  flex justify-center p-4 mt-15">
-            <div className="w-full max-w-[400px] bg-slate-500/50 rounded-[40px] flex flex-col items-center  p-4">
+            <div className="w-full max-w-[300px] bg-slate-500/50 rounded-[40px] flex flex-col items-center  p-4">
               
               <div className="mt-4 flex flex-row items-center justify-center gap-4">
                 <div className="flex items-center justify-center h-20 w-14 rounded-[40px] border-2 border-white">
