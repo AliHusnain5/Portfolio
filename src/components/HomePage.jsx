@@ -87,6 +87,7 @@ const HomePage = () => {
       id="home"
       className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center"
     >
+      ali
 {/*     
        <div className="w-full md:w-1/3 flex justify-center p-4 mt-15">
         <div className="w-full max-w-[400px] bg-slate-500/50 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[80vh] p-4">
@@ -237,7 +238,7 @@ const HomePage = () => {
         </div>  */}
 
         {/* Buttons */}
-        <div className="flex flex-wrap gap-4 mt-6">
+        {/* <div className="flex flex-wrap gap-4 mt-6">
           <button className="group relative overflow-hidden border border-white w-full sm:w-40 h-16 rounded-4xl text-lg font-medium">
             <div className="h-32 flex flex-col transition-transform duration-300 group-hover:-translate-y-16">
               <span className="h-16 flex items-center justify-center gap-2">
@@ -259,7 +260,7 @@ const HomePage = () => {
               </span>
             </div>
           </button>
-        </div>
+        </div> */}
 
         {/* Sections */}
          {/* <div className="mt-20 space-y-20">
