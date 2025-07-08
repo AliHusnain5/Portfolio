@@ -115,19 +115,24 @@ const HomePage = () => {
             <p className="text-gray-400 -mt-1">Based in:</p>
             <p className="-mt-2">Lahore, Pakistan</p>
           </div>
+<div className="flex mt-1 gap-3">
+  {[FaFacebookF, FaPinterestP, FaInstagram, IoLogoGoogle].map((Icon, i) => (
+    <div
+      key={i}
+      className="group relative w-10 h-10 overflow-hidden border rounded-2xl cursor-pointer bg-[#ebf0f7]"
+    >
+      <div className="h-20 flex flex-col transition-transform duration-300 group-hover:-translate-y-10 items-center">
+        <div className="w-10 h-10 flex items-center justify-center">
+          <Icon className="w-5 h-5 text-black" />
+        </div>
+        <div className="w-10 h-10 flex items-center justify-center">
+          <Icon className="w-5 h-5 text-black" />
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
 
-          <div className="flex mt-1 gap-3">
-            {[FaFacebookF, FaPinterestP, FaInstagram, IoLogoGoogle].map(
-              (Icon, i) => (
-                <div
-                  key={i}
-                  className="group relative w-10 h-10 overflow-hidden border rounded-2xl cursor-pointer flex items-center justify-center bg-[#ebf0f7]"
-                >
-                  <Icon className="w-5 h-5 text-black" />
-                </div>
-              )
-            )}
-          </div>
 
           <div
             onClick={scrollToContact}
