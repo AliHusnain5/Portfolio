@@ -25,13 +25,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 text-3xl mt-20 gap-x-4 gap-y-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2  sm:text-2xl lg:text-3xl mt-10 gap-x-4 gap-y-8 px-4 sm:px-6 md:px-10 lg:px-20 w-full max-w-6xl mx-auto">
       <div>
         <input
           type="text"
           name="name"
           placeholder="Your Name*"
-          className="border-none focus:outline-none"
+          className="border-none focus:outline-none w-full bg-transparent"
           onChange={handleChange}
         />
         <hr className="w-full mt-2" />
@@ -42,7 +42,7 @@ const ContactForm = () => {
           type="text"
           name="company"
           placeholder="Company Name*"
-          className="border-none focus:outline-none"
+          className="border-none focus:outline-none w-full bg-transparent"
           onChange={handleChange}
         />
         <hr className="w-full mt-2" />
@@ -53,7 +53,7 @@ const ContactForm = () => {
           type="text"
           name="email"
           placeholder="Email Address*"
-          className="border-none focus:outline-none"
+          className="border-none focus:outline-none w-full bg-transparent"
           onChange={handleChange}
         />
         <hr className="w-full mt-2" />
@@ -64,38 +64,37 @@ const ContactForm = () => {
           type="text"
           name="phone"
           placeholder="Phone Number*"
-          className="border-none focus:outline-none"
+          className="border-none focus:outline-none w-full bg-transparent"
           onChange={handleChange}
         />
         <hr className="w-full mt-2" />
       </div>
 
-      <div className="col-span-2">
+      <div className="col-span-1 sm:col-span-2">
         <input
           type="text"
           name="message"
           placeholder="A Few Words*"
-          className="border-none focus:outline-none w-full"
+          className="border-none focus:outline-none w-full bg-transparent"
           onChange={handleChange}
         />
         <hr className="w-full mt-2" />
       </div>
 
-      <div className="col-span-2">
-        <button
-          onClick={handleSendWhatsApp}
-          className="group relative overflow-hidden border border-white mt-10 w-70 px-3 h-17 rounded-4xl text-3xl font-medium"
-        >
-          <div className="h-32 flex flex-col transition-transform duration-300 group-hover:-translate-y-16">
-            <span className="h-16 flex items-center justify-center gap-2">
-              Send Message <IoMdSend size={24} />
-            </span>
-            <span className="h-16 flex items-center justify-center gap-2">
-              Send Message <IoMdSend size={24} />
-            </span>
-          </div>
-        </button>
+      <div className="col-span-1 sm:col-span-2 flex justify-center mt-5">
+     <button className="group relative overflow-hidden border bg-gray-700 border-white w-full sm:w-80 h-14 rounded-4xl text-base sm:text-lg font-medium">
+                 <div className="h-28 flex flex-col transition-transform duration-300 group-hover:-translate-y-14">
+                   <span className="h-14 flex items-center justify-center gap-2">
+                     Send Message <IoMdSend size={24}  />
+                   </span>
+                   <span className="h-14 flex items-center justify-center gap-2">
+                     Send Message    <IoMdSend size={24}/>
+                   </span>
+                 </div>
+               </button>
       </div>
+     
+
     </div>
   );
 };

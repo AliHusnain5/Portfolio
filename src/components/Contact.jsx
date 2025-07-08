@@ -9,14 +9,14 @@ const Contact = () => {
   return (
     <div className='mt-40 md:mt-80 px-4 overflow-hidden' id='Contact'>
       {/* Title Badge */}
-      <span className="bg-black text-white w-fit flex justify-center items-center py-3 px-8 text-lg rounded-2xl gap-2">
+      <span className="bg-black text-white w-fit flex justify-center items-center py-3 px-8  rounded-2xl gap-2">
         <span>⭐</span>
         Contact
       </span>
 
       {/* Heading */}
       <div className="mt-10 md:mt-20">
-        <h1 className="font-bold text-3xl md:text-7xl text-center md:text-left">
+        <h1 className=" text-3xl md:text-5xl text-center md:text-left">
           Let's make something <br className='hidden md:block' /> awesome together!
         </h1>
       </div>
@@ -33,14 +33,14 @@ const Contact = () => {
             key={idx}
             className='border py-6 px-6 w-32 sm:w-36 md:w-40 rounded-4xl flex flex-col items-center justify-center bg-slate-800 transition-all duration-300 hover:scale-105 hover:bg-slate-700 cursor-pointer'
           >
-            <Icon className='w-14 h-14 sm:w-16 sm:h-16' />
+            <Icon className='w-12 h-12 sm:w-16 sm:h-16' />
           </div>
         ))}
       </div>
 
       {/* Description Text */}
       <div className="mt-16">
-        <h2 className="text-xl md:text-5xl font-semibold text-center leading-relaxed">
+        <h2 className="text-xl md:text-3xl  text-center leading-relaxed">
           Want to know more about me, tell me about your project or just to say hello?
           <br className='hidden md:block' />
           Drop me a line and I'll get back as soon as possible.
@@ -51,7 +51,7 @@ const Contact = () => {
       <hr className='mt-20 border-gray-500' />
 
       {/* Contact Info */}
-      <div className='flex flex-col md:flex-row justify-between text-base sm:text-lg md:text-2xl mt-10 mb-40 gap-10 md:gap-0 text-center md:text-left'>
+      <div className='flex flex-col md:flex-row justify-between text-base sm:text-lg  mt-10 mb-40 gap-10 md:gap-0 text-center md:text-left'>
         <div className='flex-1'>
           <p>Location</p>
           <p className='text-gray-400'>Lahore</p>

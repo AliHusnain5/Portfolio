@@ -22,3 +22,8 @@ body {
     overscroll-behavior: none;
   }
 } */
+ /* index.css or App.css */
+body {
+  zoom: 100%;
+}
+

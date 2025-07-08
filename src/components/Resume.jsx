@@ -40,17 +40,17 @@ const Resume = () => {
       {/* Header */}
       <div className="mt-10">
         <div>
-          <span className="bg-black text-white w-fit flex justify-center items-center py-3 px-8 text-lg rounded-2xl gap-2">
+          <span className="bg-black text-white w-fit flex justify-center items-center py-3 px-8  rounded-2xl gap-2">
             <span>⭐</span>
             Resume
           </span>
         </div>
         <div className="mt-7 ml-1 md:ml-3">
-          <h1 className="font-bold text-4xl md:text-7xl">
+          <h1 className=" text-4xl md:text-5xl">
             Education and Practical <br /> Experience
           </h1>
         </div>
-        <div className="mt-10 ml-2 md:ml-5 text-base md:text-xl">
+        <div className="mt-10 ml-2 md:ml-5 text-base md:text-base">
           I have pursued a path of learning that is, perhaps, best described as both deliberate and <br />
           intuitive—anchored in the principle of appearing not merely as learned, but as one truly <br />
           embodying the essence of knowledge. My academic journey reflects not only what I have studied but also what I have become, ensuring that what I seem to know is not otherwise <br />
@@ -60,10 +60,10 @@ const Resume = () => {
 
       {/* Education Section */}
       <div className="mt-20">
-        <h2 className="text-3xl md:text-5xl font-semibold">Education</h2>
+        <h2 className="text-3xl md:text-5xl ">Education</h2>
         <hr className="mt-6 border-gray-600" />
         {entries.map((entry, index) => (
-          <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-xl gap-5 md:gap-10">
+          <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-base gap-5 md:gap-10">
             <p className="w-full md:w-[15%]">{entry.year}</p>
             <p className="w-full md:w-[25%]">
               {entry.title}
@@ -77,10 +77,10 @@ const Resume = () => {
 
       {/* Course Section */}
       <div className="mt-20">
-        <h2 className="text-3xl md:text-5xl font-semibold">Courses</h2>
+        <h2 className="text-3xl md:text-5xl ">Courses</h2>
         <hr className="mt-6 border-gray-600" />
         {entrie.map((entry, index) => (
-          <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-xl gap-5 md:gap-10">
+          <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-base gap-5 md:gap-10">
             <p className="w-full md:w-[15%]">{entry.year}</p>
             <p className="w-full md:w-[25%]">
               {entry.title}
@@ -94,10 +94,10 @@ const Resume = () => {
 
       {/* Experience Section */}
       <div className="mt-20">
-        <h2 className="text-3xl md:text-5xl font-semibold">Experience</h2>
+        <h2 className="text-3xl md:text-5xl ">Experience</h2>
         <hr className="mt-6 border-gray-600" />
         {entries.map((entry, index) => (
-          <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-xl gap-5 md:gap-10">
+          <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-base gap-5 md:gap-10">
             <p className="w-full md:w-[15%]">{entry.year}</p>
             <p className="w-full md:w-[25%]">
               {entry.title}
@@ -111,7 +111,7 @@ const Resume = () => {
 
       {/* Favorite Tools */}
       <div className="mt-20">
-        <h2 className="text-3xl md:text-5xl font-semibold">My Favourite Tools</h2>
+        <h2 className="text-3xl md:text-5xl ">My Favourite Tools</h2>
         <hr className="mt-6 border-gray-600" />
         <div className="mt-10 text-xl">
           <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5'>
