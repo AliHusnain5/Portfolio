@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <div className='mt-40 md:mt-80 px-4 overflow-hidden' id='Contact'>
+    <div className='mt-40 md:mt-40 px-4 overflow-hidden' id='Contact'>
       {/* Title Badge */}
       <span className="bg-black text-white w-fit flex justify-center items-center py-3 px-8  rounded-2xl gap-2">
         <span>⭐</span>

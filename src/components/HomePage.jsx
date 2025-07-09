@@ -33,7 +33,6 @@ const HomePage = () => {
 
   useEffect(() => {
     const sectionIds = ["home", "portfolio", "aboutme", "resume", "contact"];
-
     const observer = new IntersectionObserver(
       (entries) => {
         const visibleSections = entries.filter((entry) => entry.isIntersecting);
@@ -71,27 +70,16 @@ const HomePage = () => {
     }
   };
 
-  const menuItems = [
-    "Home",
-    "Portfolio",
-    "About Me",
-    "Resume",
-    "Contact",
-    "Let's talk",
-  ];
-
+  const menuItems = ["Home", "Portfolio", "About Me", "Resume", "Contact", "Let's talk"];
   const getId = (item) =>
     item === "Contact" || item === "Let's talk"
       ? "contact"
       : item.replace(/\s+/g, "").toLowerCase();
 
   return (
-    <section
-      id="home"
-      className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center"
-    >
+    <section id="home" className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center">
       {/* Sidebar */}
-      <div className="w-full md:w-1/3 flex justify-center p-4 mt-3">
+      <div className="w-full md:w-1/3 flex justify-center  p-4 mt-3">
         <div className="w-full max-w-[290px] bg-blue-300/10 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[95vh] p-4">
           <div className="mt-4 flex flex-row items-center justify-center gap-4">
             <div className="flex items-center justify-center h-16 w-12 rounded-[40px] border-2 border-white">
@@ -115,24 +103,24 @@ const HomePage = () => {
             <p className="text-gray-400 -mt-1">Based in:</p>
             <p className="-mt-2">Lahore, Pakistan</p>
           </div>
-<div className="flex mt-1 gap-3">
-  {[FaFacebookF, FaPinterestP, FaInstagram, IoLogoGoogle].map((Icon, i) => (
-    <div
-      key={i}
-      className="group relative w-10 h-10 overflow-hidden border rounded-2xl cursor-pointer bg-[#ebf0f7]"
-    >
-      <div className="h-20 flex flex-col transition-transform duration-300 group-hover:-translate-y-10 items-center">
-        <div className="w-10 h-10 flex items-center justify-center">
-          <Icon className="w-5 h-5 text-black" />
-        </div>
-        <div className="w-10 h-10 flex items-center justify-center">
-          <Icon className="w-5 h-5 text-black" />
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
 
+          <div className="flex mt-1 gap-3">
+            {[FaFacebookF, FaPinterestP, FaInstagram, IoLogoGoogle].map((Icon, i) => (
+              <div
+                key={i}
+                className="group relative w-10 h-10 overflow-hidden border rounded-2xl cursor-pointer bg-[#ebf0f7]"
+              >
+                <div className="h-20 flex flex-col transition-transform duration-300 group-hover:-translate-y-10 items-center">
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-black" />
+                  </div>
+                  <div className="w-10 h-10 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-black" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
 
           <div
             onClick={scrollToContact}
@@ -155,13 +143,15 @@ const HomePage = () => {
       </div>
 
       {/* Right Content */}
-      <div className="relative w-full md:w-3/4 flex flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
+      <div className="relative w-full md:w-3/4 flex mx-auto flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
+
         {/* Mobile Navbar */}
         <div className="md:hidden fixed top-5 z-50 w-full px-1 py-3 bg-black/30 backdrop-blur-md">
           <div className="flex w-fit min-w-full justify-start gap-5 text-xs font-medium overflow-x-auto scrollbar-hide">
             {menuItems.map((item, index) => {
               const id = getId(item);
               const isActive = activeLink === id;
+
               return (
                 <a
                   key={index}
@@ -196,6 +186,7 @@ const HomePage = () => {
           {menuItems.map((item, index) => {
             const id = getId(item);
             const isActive = activeLink === id;
+
             return (
               <a
                 key={index}
@@ -235,9 +226,7 @@ const HomePage = () => {
             </h1>
             <h1 className="text-4xl sm:text-4xl md:text-6xl font-medium mt-2">
               Mern Stack <br />
-              <span className="bg-green-500 inline-block px-2 rounded">
-                Developer
-              </span>
+              <span className="bg-green-500 inline-block px-2 rounded">Developer</span>
             </h1>
           </div>
 
@@ -245,12 +234,8 @@ const HomePage = () => {
           <div className="flex flex-wrap gap-4 mt-20">
             <button className="group relative overflow-hidden border border-white w-full sm:w-40 h-12 rounded-4xl text-lg font-medium">
               <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
-                <span className="h-12 flex items-center justify-center gap-2">
-                  👨‍💻 My Work
-                </span>
-                <span className="h-12 flex items-center justify-center gap-2">
-                  👨‍💻 My Work
-                </span>
+                <span className="h-12 flex items-center justify-center gap-2">👨‍💻 My Work</span>
+                <span className="h-12 flex items-center justify-center gap-2">👨‍💻 My Work</span>
               </div>
             </button>
 
@@ -267,8 +252,8 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Sections with IDs outside */}
-        <div className="mt-20 ">
+        {/* Other Sections */}
+        <div className="mt-20">
           <div id="portfolio" className="min-h-screen w-full scroll-mt-36">
             <Portfolio />
           </div>

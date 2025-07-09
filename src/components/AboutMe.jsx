@@ -3,19 +3,20 @@ import { FaDownload } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <div id="AboutMe" className="px-4 sm:px-6 md:px-10 py-10">
-      <div className="text-shadow-blue-300">
+    <div id="AboutMe" className="w-full py-10 px-4">
+      {/* Center wrapper */}
+      <div className="max-w-[1200px] mx-auto text-shadow-blue-300">
         {/* Title */}
         <div>
-          <span className="bg-black text-white w-[185px] flex justify-center items-center py-2 sm:py-3 px-6 sm:px-8 text-base sm:text-lg rounded-2xl gap-2">
+          <span className="bg-black text-white w-[185px] flex justify-center items-center py-2 sm:py-3 px-6 sm:px-8 text-base sm:text-lg rounded-2xl gap-2 ">
             <span>⭐</span>
             About Me
           </span>
         </div>
 
         {/* Heading */}
-        <div className="mt-5 sm:mt-7">
-          <h1 className=" text-3xl sm:text-5xl lg:text-5xl leading-tight">
+        <div className="mt-5 sm:mt-7 ">
+          <h1 className="text-3xl sm:text-5xl lg:text-5xl ">
             Crafting user-friendly <br /> interfaces with Mern Stack
           </h1>
         </div>
@@ -51,7 +52,7 @@ const AboutMe = () => {
 
         {/* Download Button */}
         <div className="mt-10">
-          <button className="group relative overflow-hidden border bg-gray-700 border-white w-full sm:w-80 h-14 rounded-4xl text-base sm:text-lg font-medium">
+          <button className="group relative overflow-hidden border bg-gray-700 border-white w-full sm:w-80 h-14 rounded-4xl text-base sm:text-lg font-medium  block">
             <div className="h-28 flex flex-col transition-transform duration-300 group-hover:-translate-y-14">
               <span className="h-14 flex items-center justify-center gap-2">
                 Download My Resume <FaDownload />
