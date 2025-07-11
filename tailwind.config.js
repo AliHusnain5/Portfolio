@@ -1,13 +1,16 @@
-// tailwind.config.js
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx,html}"],
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 10s linear infinite',
-        'spin-text': 'spin 20s linear infinite',
+        'scroll-slow': 'scroll 10s linear infinite', // 10s = धीमा, 5s = मध्यम
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }, // Text को लगातार स्क्रॉल करेगा
+        },
       },
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [],
 };

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 import HomePage from './components/HomePage';
+import ArrowScroll from './components/ArrowScroll';
 // import SocialIcons from './components/SocialIcons';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
       
       <HomePage/>
+      <ArrowScroll  />
     </div>
   );
 }

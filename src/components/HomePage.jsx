@@ -4,6 +4,9 @@ import AboutMe from "./AboutMe";
 import Resume from "./Resume";
 import Contact from "./Contact";
 
+
+
+
 import {
   FaDownload,
   FaHome,
@@ -18,6 +21,7 @@ import {
   FaFacebookF,
 } from "react-icons/fa6";
 import { IoLogoGoogle, IoMdSend } from "react-icons/io";
+import ArrowScroll from "./ArrowScroll";
 
 const icons = {
   home: <FaHome />,
@@ -214,11 +218,13 @@ const HomePage = () => {
         </div>
 
         {/* Hero Section */}
-        <div className="mt-[90px]" id="home">
+        <div className="mt-[90px] flex flex-col h-400 justify-center" id="home">
+          <div>
           <span className="bg-black text-white inline-flex justify-center items-center py-2 px-6 text-sm sm:text-lg rounded-2xl gap-2">
             <span>⭐</span>
             Let's meet!
           </span>
+          </div>
 
           <div className="mt-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium">
@@ -230,8 +236,12 @@ const HomePage = () => {
             </h1>
           </div>
 
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-4 mt-20">
+
+   <div className="flex justify-center md:justify-end w-full p-4 mt-20">
+  
+        {/* Buttons */}
+          <div className="flex flex-wrap w-200 gap-4 items-end ">
+            
             <button className="group relative overflow-hidden border border-white w-full sm:w-40 h-12 rounded-4xl text-lg font-medium">
               <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
                 <span className="h-12 flex items-center justify-center gap-2">👨‍💻 My Work</span>
@@ -239,17 +249,28 @@ const HomePage = () => {
               </div>
             </button>
 
-            <button className="group relative overflow-hidden w-full sm:w-40 h-12 rounded-xl text-lg font-medium">
-              <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
-                <span className="h-12 flex items-center justify-center gap-2">
-                  Download CV <FaDownload />
-                </span>
-                <span className="h-12 flex items-center justify-center gap-2">
-                  Download CV <FaDownload />
-                </span>
-              </div>
-            </button>
+            <a href="/Ali-Husnain-Resume.pdf" download>
+      <button className="group relative overflow-hidden w-full sm:w-40 h-12 rounded-xl text-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+        <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
+          <span className="h-12 flex items-center justify-center gap-2">
+            Download CV <FaDownload />
+          </span>
+          <span className="h-12 flex items-center justify-center gap-2">
+            Download CV <FaDownload />
+          </span>
+        </div>
+      </button>
+    </a>
           </div>
+
+
+</div>
+
+
+
+    
+
+
         </div>
 
         {/* Other Sections */}
