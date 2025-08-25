@@ -97,7 +97,7 @@ const HomePage = () => {
           <div
             className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[180px] md:w-[230px] mt-4 bg-cover bg-no-repeat bg-amber-300 rounded-[27px]"
             style={{
-              backgroundImage: `url("https://scontent.fkhi17-2.fna.fbcdn.net/v/t1.6435-9/123007344_1540656889657979_2599613634740453774_n.jpg?stp=c0.112.1019.1019a_dst-jpg_s206x206_tt6&_nc_cat=108&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeHLxkbk3iuZeyJorGlq0SwDv7QeeFYv1_u_tB54Vi_X-9qW4XQH3W9MNJZvocudKU6S2teW2SDOmBROlKFGKWo8&_nc_ohc=aqqE3ZQYpM0Q7kNvwFiiEUk&_nc_oc=Adm231JgPif47GzprUQAjLKpsip8qBWlsHr8CA-FzMtux1rlNAAaO_L_w7EHLjIfY5w&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=MC6tK6PJJjDCmd-14nqgNA&oh=00_AfTrO6jr7R821DXxCL4rARAVlcGs7Oz0R4Jpo77Lf3-Rwg&oe=68947F73")`,
+              backgroundImage: `url("https://scontent.fkhi22-1.fna.fbcdn.net/v/t1.6435-9/69751898_1133899650333707_3597988021909061632_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHKF7STgwwYAxmrwA5lFWqZxnaV9bc-HUPGdpX1tz4dQ5cSyn7kBMCl_DZ_n20YkJ_vBMIDhCNCpst-sxKsVudG&_nc_ohc=m3chnhS9JMMQ7kNvwFA-XcI&_nc_oc=AdlkydAaPXr7DemOW-ayZHfbmgLB1uaHczuvhy5scwtUwW5RrvFI--2Kd4pmGKdnh4g&_nc_zt=23&_nc_ht=scontent.fkhi22-1.fna&_nc_gid=KL18K0sOtOpKtM3A79CBZA&oh=00_AfWbCccz1PGfnNdchlwH5RnU8DuZ3acKVyZndc8muX9sgQ&oe=68D35162")`,
             }}
           ></div>
 

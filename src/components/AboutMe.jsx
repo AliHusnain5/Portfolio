@@ -52,7 +52,7 @@ const AboutMe = () => {
 
         {/* Download Button */}
         <div className="mt-10">
-          <button className="group relative overflow-hidden border bg-gray-700 border-white w-full sm:w-80 h-14 rounded-4xl text-base sm:text-lg font-medium  block">
+          <button className="group relative overflow-hidden border bg-gray-700 border-white  sm:w-80 h-14 rounded-4xl text-base sm:text-lg font-medium  block">
             <div className="h-28 flex flex-col transition-transform duration-300 group-hover:-translate-y-14">
               <span className="h-14 flex items-center justify-center gap-2">
                 Download My Resume <FaDownload />
