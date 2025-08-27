@@ -138,7 +138,7 @@ const HomePage = () => {
               <span className="h-10 flex items-center justify-center">
                 Find me on Fiverr
               </span>
-              <span className="h-10 flex bg-amber-400 items-center justify-center">
+              <span className="h-10 flex  items-center justify-center">
                 Find me on Fiverr
               </span>
             </div>
