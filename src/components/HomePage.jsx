@@ -3,6 +3,8 @@ import Portfolio from "./Portfolio";
 import AboutMe from "./AboutMe";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 
@@ -109,7 +111,7 @@ const HomePage = () => {
           </div>
 
           <div className="flex mt-1 gap-3">
-            {[FaFacebookF, FaPinterestP, FaInstagram, IoLogoGoogle].map((Icon, i) => (
+            {[FaGithub, FaPinterestP, FaInstagram, FaLinkedinIn].map((Icon, i) => (
               <div
                 key={i}
                 className="group relative w-10 h-10 overflow-hidden border rounded-2xl cursor-pointer bg-[#ebf0f7]"
@@ -133,13 +135,13 @@ const HomePage = () => {
             Let's Work Together!
           </div>
 
-          <button className="group relative overflow-hidden bg-red-500 hover:bg-red-600 mt-3 text-white w-full h-10 rounded-2xl font-medium text-lg shadow-md transition-all">
+          <button className="group relative overflow-hidden bg-amber-300 hover:bg-red-600 mt-3 text-black w-full h-10 rounded-2xl font-medium text-lg shadow-md transition-all">
             <div className="h-20 flex flex-col transition-transform duration-300 group-hover:-translate-y-10">
               <span className="h-10 flex items-center justify-center">
-                Find me on Fiverr
+                Find me on UpWork
               </span>
               <span className="h-10 flex  items-center justify-center">
-                Find me on Fiverr
+                Find me on UpWork
               </span>
             </div>
           </button>
@@ -220,20 +222,31 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="mt-[90px] flex flex-col h-400 justify-center" id="home">
           <div>
-          <span className="bg-black text-white inline-flex justify-center items-center py-2 px-6 text-sm sm:text-lg rounded-2xl gap-2">
+          <span className="bg-black text-white inline-flex justify-center items-center py-1 px-2 text-sm sm:text-lg rounded-4xl gap-2">
             <span>⭐</span>
             Let's meet!
           </span>
           </div>
 
-          <div className="mt-4">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium">
+          <div className="mt-4 flex justify-between">
+      <div>
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium">
               I'm Ali Husnain
             </h1>
             <h1 className="text-4xl sm:text-4xl md:text-6xl font-medium mt-2">
               Mern Stack <br />
               <span className="bg-green-500 inline-block px-2 rounded">Developer</span>
             </h1>
+      </div>
+            <div className="text-xl">
+            Major Projects
+            <p>5+</p>
+            </div>
+            <div className="text-xl">
+              Mini Projects
+              <p>10+</p>
+            </div>
           </div>
 
 
@@ -250,7 +263,7 @@ const HomePage = () => {
             </button>
 
             <a href="/Ali-Husnain-Resume.pdf" download>
-      <button className="group relative overflow-hidden w-full sm:w-40 h-12 rounded-xl text-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+      <button className="group relative overflow-hidden w-full sm:w-40 h-12 rounded-4xl text-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors">
         <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
           <span className="h-12 flex items-center justify-center gap-2">
             Download CV <FaDownload />

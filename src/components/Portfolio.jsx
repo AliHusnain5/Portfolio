@@ -6,10 +6,10 @@ const Portfolio = () => {
       {/* Wrapper to center content and control max width */}
       <div className="max-w-[1200px] mx-auto">
         {/* Title Badge */}
-        <div className="w-fit bg-black text-white flex justify-center items-center py-2 sm:py-3 px-6 sm:px-8 sm:text-lg rounded-2xl gap-2 ">
-          <span>⭐</span>
-          Portfolio
-        </div>
+        <span className="bg-black text-white w-fit flex justify-center items-center py-1 px-3 rounded-2xl gap-2">
+              <span>⭐</span>
+              Portfolio
+            </span>
 
         {/* Heading */}
         <div className="mt-6 sm:mt-8 ">

@@ -42,7 +42,7 @@ const Resume = () => {
         {/* Header */}
         <div className="mt-10">
           <div>
-            <span className="bg-black text-white w-fit flex justify-center items-center py-3 px-8 rounded-2xl gap-2">
+            <span className="bg-black text-white w-fit flex justify-center items-center py-1 px-3 rounded-2xl gap-2">
               <span>⭐</span>
               Resume
             </span>
@@ -113,15 +113,15 @@ const Resume = () => {
 
         {/* Favorite Tools */}
         <div className="mt-20">
-          <h2 className="text-3xl md:text-5xl">My Favourite Tools</h2>
+          <h2 className="text-3xl md:text-4xl">My Favourite Tools</h2>
           <hr className="mt-6 border-gray-600" />
-          <div className="mt-10 text-xl">
+          <div className="mt-10 ">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
               {[
                 { name: 'VS Code', url: 'visual-studio.svg' },
                 { name: 'Figma', url: 'icon-figma.svg' },
                 { name: 'Canva', url: 'Canva.svg' },
-                { name: 'MS oFFice', url: 'ms-office.svg' },
+                { name: 'MS OFFice', url: 'ms-office.svg' },
                 { name: 'Javascript', url: 'javascript.svg' },
                 { name: 'Git Hub', url: 'https://www.bing.com/th/id/OIP.7MTPJSqWfwQ7fMIpVgSGrAHaHa?w=170&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2', isFullUrl: true },
                 { name: 'Filmora', url: 'filmora.svg' },
@@ -131,7 +131,7 @@ const Resume = () => {
               ].map((tool, index) => (
                 <div key={index} className="border py-6 px-5 w-full rounded-3xl flex flex-col items-center justify-center bg-slate-800">
                   <div
-                    className="w-[80px] h-[80px] bg-cover bg-center"
+                    className="w-[50px] h-[60px] bg-cover bg-center"
                     style={{
                       backgroundImage: `url(${tool.isFullUrl ? tool.url : `https://portfolio-fatimashehzadi.vercel.app/img/icons/${tool.url}`})`
                     }}

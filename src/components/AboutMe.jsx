@@ -8,10 +8,10 @@ const AboutMe = () => {
       <div className="max-w-[1200px] mx-auto text-shadow-blue-300">
         {/* Title */}
         <div>
-          <span className="bg-black text-white w-[185px] flex justify-center items-center py-2 sm:py-3 px-6 sm:px-8 text-base sm:text-lg rounded-2xl gap-2 ">
-            <span>⭐</span>
-            About Me
-          </span>
+        <span className="bg-black text-white w-fit flex justify-center items-center py-1 px-3 rounded-2xl gap-2">
+              <span>⭐</span>
+              About me
+            </span>
         </div>
 
         {/* Heading */}

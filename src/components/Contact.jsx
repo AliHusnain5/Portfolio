@@ -4,12 +4,16 @@ import { FaInstagram, FaPinterestP } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoGoogle } from "react-icons/io";
 import ContactForm from './ContactForm';
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+
 
 const Contact = () => {
   return (
     <div className='mt-40 md:mt-40 px-4 overflow-hidden' id='Contact'>
       {/* Title Badge */}
-      <span className="bg-black text-white w-fit flex justify-center items-center py-3 px-8  rounded-2xl gap-2">
+      <span className="bg-black text-white w-fit flex justify-center items-center py-1 px-3  rounded-4xl gap-2">
         <span>⭐</span>
         Contact
       </span>
@@ -28,12 +32,12 @@ const Contact = () => {
 
       {/* Social Icons */}
       <div className='flex flex-wrap justify-center gap-6 mt-20'>
-        {[IoLogoGoogle, FaInstagram, FaPinterestP, FaFacebookF].map((Icon, idx) => (
+        {[FaGithub, FaInstagram, FaPinterestP, FaLinkedinIn].map((Icon, idx) => (
           <div
             key={idx}
-            className='border py-6 px-6 w-32 sm:w-36 md:w-40 rounded-4xl flex flex-col items-center justify-center bg-slate-800 transition-all duration-300 hover:scale-105 hover:bg-slate-700 cursor-pointer'
+            className='border py-6 px-2 w-20 sm:w-36 md:w-40 rounded-3xl flex flex-col items-center justify-center bg-slate-800 transition-all duration-300 hover:scale-105 hover:bg-slate-700 cursor-pointer'
           >
-            <Icon className='w-12 h-12 sm:w-16 sm:h-16' />
+            <Icon className='w-3 h-2 sm:w-10 sm:h-10' />
           </div>
         ))}
       </div>
