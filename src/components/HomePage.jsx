@@ -9,6 +9,7 @@ import { FaGithub } from "react-icons/fa";
 
 
 
+
 import {
   FaDownload,
   FaHome,
@@ -262,7 +263,9 @@ const HomePage = () => {
               </div>
             </button>
 
-            <a href="/Ali-Husnain-Resume.pdf" download>
+            <a href="https://drive.google.com/uc?export=download&id=1vKycvL64Cc3Fbd7nBIODOpUt0r5mGhvK
+"   
+  rel="noopener noreferrer">
       <button className="group relative overflow-hidden w-full sm:w-40 h-12 rounded-4xl text-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors">
         <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
           <span className="h-12 flex items-center justify-center gap-2">
