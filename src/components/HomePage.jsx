@@ -34,6 +34,12 @@ const icons = {
   contact: <FaEnvelope />,
   letstalk: <IoMdSend />,
 };
+const socials = [
+  { icon: FaGithub, link: "https://github.com/AliHusnain5" },
+  { icon: FaInstagram, link: "https://instagram.com/yourusername" },
+  { icon: FaPinterestP, link: "https://pinterest.com/yourusername" },
+  { icon: FaLinkedinIn, link: "https://www.linkedin.com/in/ali-husnain-958320321/" },
+];
 
 const HomePage = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -112,9 +118,12 @@ const HomePage = () => {
           </div>
 
           <div className="flex mt-1 gap-3">
-            {[FaGithub, FaPinterestP, FaInstagram, FaLinkedinIn].map((Icon, i) => (
-              <div
-                key={i}
+            {socials.map(({ icon: Icon, link },idx) => (
+              <a
+                key={idx}
+                    href={link}
+      target="_blank"
+      rel="noopener noreferrer"
                 className="group relative w-10 h-10 overflow-hidden border rounded-2xl cursor-pointer bg-[#ebf0f7]"
               >
                 <div className="h-20 flex flex-col transition-transform duration-300 group-hover:-translate-y-10 items-center">
@@ -125,7 +134,7 @@ const HomePage = () => {
                     <Icon className="w-5 h-5 text-black" />
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
@@ -137,6 +146,10 @@ const HomePage = () => {
           </div>
 
           <button className="group relative overflow-hidden bg-amber-300 hover:bg-red-600 mt-3 text-black w-full h-10 rounded-2xl font-medium text-lg shadow-md transition-all">
+            <a
+             href="https://www.upwork.com/freelancers/~01b49b970f74de6174"
+target="_blank"
+            >
             <div className="h-20 flex flex-col transition-transform duration-300 group-hover:-translate-y-10">
               <span className="h-10 flex items-center justify-center">
                 Find me on UpWork
@@ -145,7 +158,9 @@ const HomePage = () => {
                 Find me on UpWork
               </span>
             </div>
+            </a>
           </button>
+          
         </div>
       </div>
 

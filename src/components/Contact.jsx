@@ -6,6 +6,12 @@ import { IoLogoGoogle } from "react-icons/io";
 import ContactForm from './ContactForm';
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+const socials = [
+  { icon: FaGithub, link: "https://github.com/AliHusnain5" },
+  { icon: FaInstagram, link: "https://instagram.com/yourusername" },
+  { icon: FaPinterestP, link: "https://pinterest.com/yourusername" },
+  { icon: FaLinkedinIn, link: "https://www.linkedin.com/in/ali-husnain-958320321/" },
+];
 
 
 
@@ -32,13 +38,16 @@ const Contact = () => {
 
       {/* Social Icons */}
       <div className='flex flex-wrap justify-center gap-6 mt-20'>
-        {[FaGithub, FaInstagram, FaPinterestP, FaLinkedinIn].map((Icon, idx) => (
-          <div
-            key={idx}
+        {socials.map(({ icon: Icon, link }, idx) => (
+          <a
+             key={idx}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
             className='border py-6 px-2 w-20 sm:w-36 md:w-40 rounded-3xl flex flex-col items-center justify-center bg-slate-800 transition-all duration-300 hover:scale-105 hover:bg-slate-700 cursor-pointer'
           >
             <Icon className='w-3 h-2 sm:w-10 sm:h-10' />
-          </div>
+          </a>
         ))}
       </div>
 
