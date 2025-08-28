@@ -93,7 +93,11 @@ const HomePage = () => {
     <section id="home" className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center">
       {/* Sidebar */}
       <div className="w-full md:w-1/3 flex justify-center  p-4 mt-3">
-        <div className="w-full max-w-[290px] bg-blue-300/10 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[95vh] p-4">
+        <div className="w-full max-w-[290px] bg-blue-300/10 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[95vh] p-4"
+        style={{
+              backgroundImage: `url("https://thfvnext.bing.com/th/id/OIP.MFrXIyB_WmbCoFBp3noaYgHaER?w=277&h=180&c=7&r=0&o=7&cb=thfvnext&dpr=1.3&pid=1.7&rm=3")`,
+            }}
+        >
           <div className="mt-4 flex flex-row items-center justify-center gap-4">
             <div className="flex items-center justify-center h-16 w-12 rounded-[40px] border-2 border-white">
               <span className="text-5xl font-extrabold text-red-300">A</span>
