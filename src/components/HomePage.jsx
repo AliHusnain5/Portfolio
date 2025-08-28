@@ -179,8 +179,8 @@ shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ri
       <div className="relative w-full md:w-3/4 flex mx-auto flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
 
         {/* Mobile Navbar */}
-        <div className="md:hidden fixed top-147   py-3 w-[92%] bg-black/30 backdrop-blur-md">
-          <div className="flex w-fit min-w-full justify-start gap-5 text-xs font-medium overflow-x-auto scrollbar-hide">
+        <div className="md:hidden fixed top-147 ml-5 rounded-4xl py-2 w-[80%] bg-black/30 backdrop-blur-md">
+          <div className="flex w-fit min-w-full px-3 justify-around  items-center gap-5 text-xs font-medium overflow-x-auto scrollbar-hide">
             {menuItems.map((item, index) => {
               const id = getId(item);
               const isActive = activeLink === id;
@@ -197,7 +197,7 @@ shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ri
                       setTimeout(() => setActiveLink(id), 500);
                     }
                   }}
-                  className={`flex-shrink-0 px-4 -mr-3 py-2 rounded-2xl transition-all duration-300 flex items-center gap-1 text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-sm ${
+                  className={`flex-shrink-0 px-2  -mr-4 py-1 rounded-2xl transition-all duration-300 flex items-center gap-1 text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-sm ${
                     item === "Let's talk"
                       ? "!bg-red-500 !text-white hover:bg-red-700"
                       : isActive
