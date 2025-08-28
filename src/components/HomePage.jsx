@@ -179,7 +179,7 @@ shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ri
       <div className="relative w-full md:w-3/4 flex mx-auto flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
 
         {/* Mobile Navbar */}
-        <div className="md:hidden fixed top-5 z-50 w-full px-1 py-3 bg-black/30 backdrop-blur-md">
+        <div className="md:hidden fixed top-100 w-full px-1 py-3 bg-black/30 backdrop-blur-md">
           <div className="flex w-fit min-w-full justify-start gap-5 text-xs font-medium overflow-x-auto scrollbar-hide">
             {menuItems.map((item, index) => {
               const id = getId(item);
