@@ -104,7 +104,11 @@ const HomePage = () => {
           </div>
 
           <div
-            className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[180px] md:w-[230px] mt-4 bg-cover bg-no-repeat bg-amber-300 rounded-[27px]"
+            className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[180px] md:w-[230px] 
+mt-4 bg-cover bg-no-repeat rounded-[27px] 
+shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ring-emerald-400 hover:scale-105 transition duration-300 ease-in-out"
+
+
             style={{
               backgroundImage: `url("https://scontent.fkhi22-1.fna.fbcdn.net/v/t1.6435-9/69751898_1133899650333707_3597988021909061632_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHKF7STgwwYAxmrwA5lFWqZxnaV9bc-HUPGdpX1tz4dQ5cSyn7kBMCl_DZ_n20YkJ_vBMIDhCNCpst-sxKsVudG&_nc_ohc=m3chnhS9JMMQ7kNvwFA-XcI&_nc_oc=AdlkydAaPXr7DemOW-ayZHfbmgLB1uaHczuvhy5scwtUwW5RrvFI--2Kd4pmGKdnh4g&_nc_zt=23&_nc_ht=scontent.fkhi22-1.fna&_nc_gid=KL18K0sOtOpKtM3A79CBZA&oh=00_AfWbCccz1PGfnNdchlwH5RnU8DuZ3acKVyZndc8muX9sgQ&oe=68D35162")`,
             }}
@@ -112,7 +116,7 @@ const HomePage = () => {
 
           <div className="text-center">
             <p className="text-gray-400">Specialization:</p>
-            <p className="-mt-1">Mern-Stack-Developer</p>
+            <p className="-mt-1">MERN Stack Developer</p>
             <p className="text-gray-400 -mt-1">Based in:</p>
             <p className="-mt-2">Lahore, Pakistan</p>
           </div>
@@ -140,26 +144,33 @@ const HomePage = () => {
 
           <div
             onClick={scrollToContact}
-            className="py-2 px-2 mt-4 bg-red-500 rounded-2xl cursor-pointer hover:bg-red-600 transition text-center w-full"
+            className="py-2 px-2 mt-4 rounded-xl font-semibold text-white 
+  bg-gradient-to-r from-red-500 to-orange-400 
+  shadow-lg shadow-red-500/50 
+  hover:from-red-600 hover:to-orange-500 
+  hover:shadow-red-500/80 hover:scale-105 
+  transition duration-300 ease-in-out text-center w-full"
           >
             Let's Work Together!
           </div>
 
-          <button className="group relative overflow-hidden bg-amber-300 hover:bg-red-600 mt-3 text-black w-full h-10 rounded-2xl font-medium text-lg shadow-md transition-all">
-            <a
-             href="https://www.upwork.com/freelancers/~01b49b970f74de6174"
-target="_blank"
-            >
-            <div className="h-20 flex flex-col transition-transform duration-300 group-hover:-translate-y-10">
-              <span className="h-10 flex items-center justify-center">
-                Find me on UpWork
-              </span>
-              <span className="h-10 flex  items-center justify-center">
-                Find me on UpWork
-              </span>
-            </div>
-            </a>
-          </button>
+ <button className="group relative overflow-hidden w-full h-10 rounded-2xl font-medium text-lg shadow-md mt-3 bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 text-white transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(255,100,50,0.8)]">
+  <a
+    href="https://www.upwork.com/freelancers/~01b49b970f74de6174"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="h-20 flex flex-col transition-transform duration-500 group-hover:-translate-y-10">
+      <span className="h-10 flex items-center justify-center">
+        🚀 Find me on UpWork
+      </span>
+      <span className="h-10 flex items-center justify-center">
+        🚀 Find me on UpWork
+      </span>
+    </div>
+  </a>
+</button>
+
           
         </div>
       </div>
@@ -194,7 +205,7 @@ target="_blank"
                       : "opacity-70 hover:opacity-100"
                   }`}
                 >
-                  <span className="text-base">
+                  <span className="text-base ">
                     {item === "Let's talk" ? "📩" : icons[id]}
                   </span>
                 </a>
@@ -223,7 +234,7 @@ target="_blank"
                 }}
                 className={`px-6 py-3 rounded-4xl flex items-center gap-1 transition-all duration-300 text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-sm ${
                   item === "Let's talk"
-                    ? "!bg-red-500 !text-white hover:bg-red-700"
+                    ? "!bg-red-500 !text-white shadow-amber-300 hover:bg-red-700"
                     : isActive
                     ? "scale-105 bg-white/30 shadow-md shadow-blue-500"
                     : "opacity-70 hover:opacity-100"
