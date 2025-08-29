@@ -2,7 +2,7 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <div className="w-full py-12 px-4">
+    <div className="w-full py-12 px-4"  data-aos="fade-up">
       {/* Wrapper to center content and control max width */}
       <div className="max-w-[1200px] mx-auto">
         {/* Title Badge */}

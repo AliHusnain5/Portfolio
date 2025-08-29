@@ -87,3 +87,10 @@ body {
 .animate-spin-slow {
   animation: spin 8s linear infinite; /* Adjust the 8s to make it faster or slower */
 }
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+

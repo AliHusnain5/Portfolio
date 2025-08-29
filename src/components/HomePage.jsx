@@ -90,7 +90,7 @@ const HomePage = () => {
       : item.replace(/\s+/g, "").toLowerCase();
 
   return (
-    <section id="home" className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-700 bg-cover bg-center">
+    <section id="home" className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-900 bg-cover bg-center">
       {/* Sidebar */}
       <div className="w-full md:w-1/3 flex justify-center  p-4 mt-3">
         <div className="w-full max-w-[290px] bg-blue-300/10 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[95vh] p-4"
