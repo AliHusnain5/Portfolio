@@ -11,6 +11,7 @@ import { FaGithub } from "react-icons/fa";
 
 
 import {
+   FaProjectDiagram, FaLaptopCode,
   FaDownload,
   FaHome,
   FaSuitcase,
@@ -90,7 +91,11 @@ const HomePage = () => {
       : item.replace(/\s+/g, "").toLowerCase();
 
   return (
-    <section id="home" className="flex flex-col md:flex-row w-full min-h-screen text-white bg-slate-900 bg-cover bg-center">
+    <section id="home" className="flex flex-col md:flex-row w-full min-h-screen text-white bg-gradient-to-br  bg-cover bg-center bg-slate-900"
+      // style={{
+      //         backgroundImage: `url("https://t3.ftcdn.net/jpg/07/50/50/64/360_F_750506473_2PGpD4QBSslus1PE6AnYjdeJxhiZVdib.jpg")`,
+      //       }}
+    >
       {/* Sidebar */}
       <div className="w-full md:w-1/3 flex justify-center  p-4 mt-3">
         <div className="w-full max-w-[290px] bg-blue-300/10 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[95vh] p-4"
@@ -270,14 +275,23 @@ shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ri
               <span className="bg-green-500 inline-block px-2 rounded">Developer</span>
             </h1>
       </div>
-            <div className="text-xl">
-            Major Projects
-            <p>5+</p>
-            </div>
-            <div className="text-xl">
-              Mini Projects
-              <p>10+</p>
-            </div>
+     {/* Major Projects */}
+      <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:scale-110">
+        <FaProjectDiagram className="text-green-400 text-5xl group-hover:text-green-300 transition-colors duration-300" />
+        <p className="text-lg text-white mt-2">Major Projects</p>
+        <p className="font-bold text-green-400 text-xl group-hover:scale-110 transition-transform duration-300">
+          5+
+        </p>
+      </div>
+
+      {/* Mini Projects */}
+      <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:scale-110">
+        <FaLaptopCode className="text-blue-400 text-5xl group-hover:text-blue-300 transition-colors duration-300" />
+        <p className="text-lg text-white mt-2">Mini Projects</p>
+        <p className="font-bold text-blue-400 text-xl group-hover:scale-110 transition-transform duration-300">
+          10+
+        </p>
+      </div>
           </div>
 
 
