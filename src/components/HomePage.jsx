@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Portfolio from "./Portfolio";
-import AboutMe from "./AboutMe";
+// import Portfolio from "./Portfolio";
+// import AboutMe from "./AboutMe";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -26,6 +26,11 @@ import {
 } from "react-icons/fa6";
 import { IoLogoGoogle, IoMdSend } from "react-icons/io";
 import ArrowScroll from "./ArrowScroll";
+
+import AboutMe from "./AboutMe";
+import ProjectsSection from "./ProjectsSection";
+
+
 
 const icons = {
   home: <FaHome />,
@@ -336,10 +341,10 @@ shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ri
         {/* Other Sections */}
         <div className="mt-20">
           <div id="portfolio" className="min-h-screen w-full scroll-mt-36">
-            <Portfolio />
+            <ProjectsSection/>
           </div>
           <div id="aboutme" className="min-h-screen w-full scroll-mt-36">
-            <AboutMe />
+            <AboutMe/>
           </div>
           <div id="resume" className="min-h-screen w-full scroll-mt-36">
             <Resume />
@@ -347,7 +352,9 @@ shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ri
           <div id="contact" className="min-h-screen w-full scroll-mt-36">
             <Contact />
           </div>
+          
         </div>
+        
       </div>
     </section>
   );

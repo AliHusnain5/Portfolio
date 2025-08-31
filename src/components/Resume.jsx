@@ -1,149 +1,160 @@
-import React from 'react';
+import React from "react";
+import { FaGraduationCap, FaBriefcase, FaAward, FaDownload } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 
 const Resume = () => {
-  const entries = [
+  const education = [
     {
-      year: "2021–2025",
-      title: "Bachelor Degree",
-      university: "AIOU University of Pakistan",
-      description:
-        "I'm pursuing a BA in Arts at AIOU University, developing a strong foundation in humanities, communication, critical thinking, and creative expression to prepare for a versatile and impactful career.",
+      degree: "Bachelor's Degree",
+      institution: "Allama Iqbal Open University (AIOU)",
+      field: "Computer Science",
+      period: "2020 - 2024",
+      description: "Specialized in software development and web technologies."
     },
     {
-      year: "2018-2019",
-      title: "ICS",
-      university: "Lahore Board ",
-      description:
-        "Studying Computer Science with a focus on building problem-solving abilities and gaining practical experience in software engineering and development methodologies.",
-    },
+      degree: "ICS (Intermediate in Computer Science)",
+      institution: "Lahore Board",
+      period: "2018 - 2020",
+      description: "Completed with focus on programming fundamentals and computer systems."
+    }
   ];
 
-  const entrie = [
+  const experience = [
     {
-      year: "2025",
-      title: "Freelancing",
-      university: " ",
-      description:
-        "Certified in freelancing from DigiSkills, proficient in client handling and project management..",
+      position: "MERN Stack Developer",
+      company: "Upwork Freelance",
+      period: "2025 - Present",
+      description: "Working with various clients to build full-stack web applications using MongoDB, Express.js, React, and Node.js. Specializing in creating responsive and efficient solutions."
     },
     {
-      year: "2025",
-      title: "MS Office",
-      university: " ",
-      description:
-        "Certified in MS Office from DigiSkills, proficient in client handling and project management..",
-    },
+      position: "Frontend Developer",
+      company: "Internship",
+      period: "2024 - 2025",
+      description: "Developed user interfaces for web applications, implemented modern design principles, and collaborated with team members on project development."
+    }
+  ];
+
+  const skills = [
+    { name: "React.js", level: 90 },
+    { name: "Node.js", level: 85 },
+    { name: "Express.js", level: 80 },
+    { name: "MongoDB", level: 85 },
+    { name: "JavaScript", level: 88 },
+    { name: "HTML/CSS", level: 92 },
+    { name: "Tailwind CSS", level: 87 },
+    { name: "Git/GitHub", level: 83 }
   ];
 
   return (
-    <div className="w-full py-10 px-4 text-white" id="Resume">
-      {/* Center wrapper */}
-      <div className="max-w-[1200px] mx-auto">
-        {/* Header */}
-        <div className="mt-10">
+    <section id="resume" className="min-h-screen py-16 px-4 md:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            My <span className="text-purple-400">Resume</span>
+          </h2>
+          <div className="w-20 h-1 bg-purple-500 mx-auto"></div>
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+            A detailed overview of my education, experience, and skills as a MERN Stack Developer
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Education Section */}
           <div>
-            <span className="bg-black text-white w-fit flex justify-center items-center py-1 px-3 rounded-2xl gap-2">
-              <span>⭐</span>
-              Resume
-            </span>
-          </div>
-          <div className="mt-7 ml-1 md:ml-3">
-            <h1 className="text-4xl md:text-5xl">
-              Education and Practical <br /> Experience
-            </h1>
-          </div>
-          <div className="mt-10 ml-2 md:ml-5 text-base md:text-base">
-            I have pursued a path of learning that is, perhaps, best described as both deliberate and <br />
-            intuitive—anchored in the principle of appearing not merely as learned, but as one truly <br />
-            embodying the essence of knowledge. My academic journey reflects not only what I have studied but also what I have become, ensuring that what I seem to know is not otherwise <br />
-            than what I truly know, and what I aspire to learn is no less than what I endeavor to share.
-          </div>
-        </div>
-
-        {/* Education Section */}
-        <div className="mt-20">
-          <h2 className="text-3xl md:text-5xl">Education</h2>
-          <hr className="mt-6 border-gray-600" />
-          {entries.map((entry, index) => (
-            <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-base gap-5 md:gap-10">
-              <p className="w-full md:w-[15%]">{entry.year}</p>
-              <p className="w-full md:w-[25%]">
-                {entry.title}
-                <br />
-                {entry.university}
-              </p>
-              <p className="w-full md:w-[60%]">{entry.description}</p>
+            <div className="flex items-center mb-8">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-3 rounded-lg mr-4">
+                <FaGraduationCap className="text-white text-2xl" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white">Education</h3>
             </div>
-          ))}
-        </div>
 
-        {/* Course Section */}
-        <div className="mt-20">
-          <h2 className="text-3xl md:text-5xl">Courses</h2>
-          <hr className="mt-6 border-gray-600" />
-          {entrie.map((entry, index) => (
-            <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-base gap-5 md:gap-10">
-              <p className="w-full md:w-[15%]">{entry.year}</p>
-              <p className="w-full md:w-[25%]">
-                {entry.title}
-                <br />
-                {entry.university}
-              </p>
-              <p className="w-full md:w-[60%]">{entry.description}</p>
+            <div className="space-y-8">
+              {education.map((item, index) => (
+                <div key={index} className="relative pl-12">
+                  <div className="absolute left-0 top-0 h-6 w-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                  <div className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-purple-400/30 transition duration-300">
+                    <span className="inline-block px-3 py-1 text-sm bg-purple-900/50 text-purple-300 rounded-full mb-3">
+                      {item.period}
+                    </span>
+                    <h4 className="text-xl font-semibold text-white mb-2">{item.degree}</h4>
+                    <p className="text-purple-400 mb-2">{item.institution}</p>
+                    {item.field && <p className="text-gray-400 mb-2">{item.field}</p>}
+                    <p className="text-gray-300">{item.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
 
-        {/* Experience Section */}
-        <div className="mt-20">
-          <h2 className="text-3xl md:text-5xl">Experience</h2>
-          <hr className="mt-6 border-gray-600" />
-          {entries.map((entry, index) => (
-            <div key={index} className="flex flex-col md:flex-row justify-between mt-10 text-base md:text-base gap-5 md:gap-10">
-              <p className="w-full md:w-[15%]">{entry.year}</p>
-              <p className="w-full md:w-[25%]">
-                {entry.title}
-                <br />
-                {entry.university}
-              </p>
-              <p className="w-full md:w-[60%]">{entry.description}</p>
+          {/* Experience Section */}
+          <div>
+            <div className="flex items-center mb-8">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-3 rounded-lg mr-4">
+                <FaBriefcase className="text-white text-2xl" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white">Experience</h3>
             </div>
-          ))}
-        </div>
 
-        {/* Favorite Tools */}
-        <div className="mt-20">
-          <h2 className="text-3xl md:text-4xl">My Favourite Tools</h2>
-          <hr className="mt-6 border-gray-600" />
-          <div className="mt-10 ">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
-              {[
-                { name: 'VS Code', url: 'visual-studio.svg' },
-                { name: 'Figma', url: 'icon-figma.svg' },
-                { name: 'Canva', url: 'Canva.svg' },
-                { name: 'MS OFFice', url: 'ms-office.svg' },
-                { name: 'Javascript', url: 'javascript.svg' },
-                { name: 'Git Hub', url: 'https://www.bing.com/th/id/OIP.7MTPJSqWfwQ7fMIpVgSGrAHaHa?w=170&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2', isFullUrl: true },
-                { name: 'Filmora', url: 'filmora.svg' },
-                { name: 'HTML5', url: 'icon-html.svg' },
-                { name: 'CSS', url: 'icon-css.svg' },
-                { name: 'Jira', url: 'https://www.bing.com/th/id/OIP.HCAT9MbHn-QmTAwUfaUQ2QHaHa?w=206&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2', isFullUrl: true },
-              ].map((tool, index) => (
-                <div key={index} className="border py-6 px-5 w-full rounded-3xl flex flex-col items-center justify-center bg-slate-800">
-                  <div
-                    className="w-[50px] h-[60px] bg-cover bg-center"
-                    style={{
-                      backgroundImage: `url(${tool.isFullUrl ? tool.url : `https://portfolio-fatimashehzadi.vercel.app/img/icons/${tool.url}`})`
-                    }}
-                  ></div>
-                  <div className="mt-2 text-center">{tool.name}</div>
+            <div className="space-y-8">
+              {experience.map((item, index) => (
+                <div key={index} className="relative pl-12">
+                  <div className="absolute left-0 top-0 h-6 w-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                  <div className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-purple-400/30 transition duration-300">
+                    <span className="inline-block px-3 py-1 text-sm bg-purple-900/50 text-purple-300 rounded-full mb-3">
+                      {item.period}
+                    </span>
+                    <h4 className="text-xl font-semibold text-white mb-2">{item.position}</h4>
+                    <p className="text-purple-400 mb-2 flex items-center">
+                      {item.company.includes("Upwork") && <SiUpwork className="mr-2 text-green-400" />}
+                      {item.company}
+                    </p>
+                    <p className="text-gray-300">{item.description}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
+
+        {/* Skills Section */}
+        <div className="mt-16">
+          <div className="flex items-center mb-12">
+            <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-3 rounded-lg mr-4">
+              <FaAward className="text-white text-2xl" />
+            </div>
+            <h3 className="text-2xl md:text-3xl font-bold text-white">My Skills</h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {skills.map((skill, index) => (
+              <div key={index} className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-purple-400/30 transition duration-300">
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-lg font-semibold text-white">{skill.name}</span>
+                  <span className="text-purple-400">{skill.level}%</span>
+                </div>
+                <div className="w-full bg-gray-700 rounded-full h-2.5">
+                  <div 
+                    className="bg-gradient-to-r from-purple-600 to-pink-500 h-2.5 rounded-full" 
+                    style={{ width: `${skill.level}%` }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Download Button */}
+        <div className="text-center mt-16">
+          <a 
+            href="https://drive.google.com/uc?export=download&id=1vKycvL64Cc3Fbd7nBIODOpUt0r5mGhvK"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-lg font-semibold text-lg shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300"
+          >
+            <FaDownload className="mr-3" />
+            Download CV
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

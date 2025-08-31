@@ -1,101 +1,83 @@
-import React, { useState } from "react";
-import { IoMdSend } from "react-icons/io";
+import React, { useState } from 'react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    email: "",
-    phone: "",
-    message: "",
+    name: '',
+    email: '',
+    message: ''
   });
 
   const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
 
-  const handleSendWhatsApp = () => {
-    const { name, company, email, phone, message } = formData;
-    const text = `Name: ${name}%0ACompany: ${company}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
-    const whatsappUrl = `https://wa.me/923094946763?text=${text}`;
-    window.open(whatsappUrl, "_blank");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log('Form submitted:', formData);
+    alert('Thank you for your message! I will get back to you soon.');
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2  sm:text-2xl lg:text-3xl mt-10 gap-x-4 gap-y-8 px-4 sm:px-6 md:px-10 lg:px-20 w-full max-w-6xl mx-auto">
-      <div>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name*"
-          className="border-none focus:outline-none w-full bg-transparent"
-          onChange={handleChange}
-        />
-        <hr className="w-full mt-2" />
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+            Your Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Enter your email"
+          />
+        </div>
       </div>
-
       <div>
-        <input
-          type="text"
-          name="company"
-          placeholder="Company Name*"
-          className="border-none focus:outline-none w-full bg-transparent"
-          onChange={handleChange}
-        />
-        <hr className="w-full mt-2" />
-      </div>
-
-      <div>
-        <input
-          type="text"
-          name="email"
-          placeholder="Email Address*"
-          className="border-none focus:outline-none w-full bg-transparent"
-          onChange={handleChange}
-        />
-        <hr className="w-full mt-2" />
-      </div>
-
-      <div>
-        <input
-          type="text"
-          name="phone"
-          placeholder="Phone Number*"
-          className="border-none focus:outline-none w-full bg-transparent"
-          onChange={handleChange}
-        />
-        <hr className="w-full mt-2" />
-      </div>
-
-      <div className="col-span-1 sm:col-span-2">
-        <input
-          type="text"
+        <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+          Your Message
+        </label>
+        <textarea
+          id="message"
           name="message"
-          placeholder="A Few Words*"
-          className="border-none focus:outline-none w-full bg-transparent"
+          rows="5"
+          value={formData.message}
           onChange={handleChange}
-        />
-        <hr className="w-full mt-2" />
+          required
+          className="w-full px-4 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          placeholder="Tell me about your project..."
+        ></textarea>
       </div>
-
-      <div className="col-span-1 sm:col-span-2 flex justify-center mt-5">
-     <button className="group relative overflow-hidden border bg-gray-700 border-white w-full sm:w-80 h-14 rounded-4xl text-base sm:text-lg font-medium">
-                 <div className="h-28 flex flex-col transition-transform duration-300 group-hover:-translate-y-14">
-                   <span className="h-14 flex items-center justify-center gap-2">
-                     Send Message <IoMdSend size={24}  />
-                   </span>
-                   <span className="h-14 flex items-center justify-center gap-2">
-                     Send Message    <IoMdSend size={24}/>
-                   </span>
-                 </div>
-               </button>
-      </div>
-     
-
-    </div>
+      <button
+        type="submit"
+        className="w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-lg font-semibold hover:shadow-purple-500/30 hover:scale-105 transition duration-300"
+      >
+        Send Message
+      </button>
+    </form>
   );
 };
 

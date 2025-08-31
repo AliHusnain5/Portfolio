@@ -1,84 +1,152 @@
 import React from 'react';
-import { IoMdSend } from 'react-icons/io';
-import { FaInstagram, FaPinterestP } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
-import { IoLogoGoogle } from "react-icons/io";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaPinterestP, FaLinkedinIn } from "react-icons/fa";
 import ContactForm from './ContactForm';
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+
 const socials = [
-  { icon: FaGithub, link: "https://github.com/AliHusnain5" },
-  { icon: FaInstagram, link: "https://instagram.com/yourusername" },
-  { icon: FaPinterestP, link: "https://pinterest.com/yourusername" },
-  { icon: FaLinkedinIn, link: "https://www.linkedin.com/in/ali-husnain-958320321/" },
+  { 
+    icon: FaGithub, 
+    link: "https://github.com/AliHusnain5",
+    name: "GitHub"
+  },
+  { 
+    icon: FaInstagram, 
+    link: "https://instagram.com/yourusername",
+    name: "Instagram"
+  },
+  { 
+    icon: FaPinterestP, 
+    link: "https://pinterest.com/yourusername",
+    name: "Pinterest"
+  },
+  { 
+    icon: FaLinkedinIn, 
+    link: "https://www.linkedin.com/in/ali-husnain-958320321/",
+    name: "LinkedIn"
+  },
 ];
-
-
 
 const Contact = () => {
   return (
-    <div className='mt-40 md:mt-40 px-4 overflow-hidden' id='Contact'>
-      {/* Title Badge */}
-      <span className="bg-black text-white w-fit flex justify-center items-center py-1 px-3  rounded-4xl gap-2">
-        <span>⭐</span>
-        Contact
-      </span>
-
-      {/* Heading */}
-      <div className="mt-10 md:mt-20">
-        <h1 className=" text-3xl md:text-5xl text-center md:text-left">
-          Let's make something <br className='hidden md:block' /> awesome together!
-        </h1>
-      </div>
-
-      {/* Form */}
-      <div className='mt-10'>
-        <ContactForm />
-      </div>
-
-      {/* Social Icons */}
-      <div className='flex flex-wrap justify-center gap-6 mt-20'>
-        {socials.map(({ icon: Icon, link }, idx) => (
-          <a
-             key={idx}
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-            className='border py-6 px-2 w-20 sm:w-36 md:w-40 rounded-3xl flex flex-col items-center justify-center bg-slate-800 transition-all duration-300 hover:scale-105 hover:bg-slate-700 cursor-pointer'
-          >
-            <Icon className='w-3 h-2 sm:w-10 sm:h-10' />
-          </a>
-        ))}
-      </div>
-
-      {/* Description Text */}
-      <div className="mt-16">
-        <h2 className="text-xl md:text-3xl  text-center leading-relaxed">
-          Want to know more about me, tell me about your project or just to say hello?
-          <br className='hidden md:block' />
-          Drop me a line and I'll get back as soon as possible.
-        </h2>
-      </div>
-
-      {/* Divider */}
-      <hr className='mt-20 border-gray-500' />
-
-      {/* Contact Info */}
-      <div className='flex flex-col md:flex-row justify-between text-base sm:text-lg  mt-10 mb-40 gap-10 md:gap-0 text-center md:text-left'>
-        <div className='flex-1'>
-          <p>Location</p>
-          <p className='text-gray-400'>Lahore</p>
+    <section id="contact" className="py-20 px-4 md:px-8 bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900">
+      <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="inline-flex items-center justify-center py-2 px-6 bg-purple-900/30 text-purple-300 rounded-full text-sm font-medium mb-4 backdrop-blur-md border border-white/10">
+            <span className="text-yellow-400 mr-2">⭐</span>
+            Get In Touch
+          </span>
+          
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Let's <span className="text-purple-400">Connect</span>
+          </h2>
+          
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Interested in working together or have a project in mind? 
+            I'm currently available for freelance opportunities.
+          </p>
         </div>
-        <div className='flex-1'>
-          <p>Phone</p>
-          <p className='text-gray-400'>+923094946763</p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Contact Information */}
+          <div className="lg:col-span-1">
+            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 h-full">
+              <h3 className="text-2xl font-bold text-white mb-8">Contact Information</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-3 rounded-lg mr-4">
+                    <FaMapMarkerAlt className="text-white text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-white">Location</h4>
+                    <p className="text-gray-300">Lahore, Pakistan</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-3 rounded-lg mr-4">
+                    <FaPhone className="text-white text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-white">Phone</h4>
+                    <p className="text-gray-300">+92 309 4946763</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-3 rounded-lg mr-4">
+                    <FaEnvelope className="text-white text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-white">Email</h4>
+                    <p className="text-gray-300 break-all">alihusnain7630@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-12">
+                <h4 className="text-lg font-semibold text-white mb-6">Follow Me</h4>
+                <div className="flex space-x-4">
+                  {socials.map(({ icon: Icon, link, name }, idx) => (
+                    <a
+                      key={idx}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-md border border-white/10 hover:bg-purple-600 transition duration-300"
+                      aria-label={name}
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="lg:col-span-2">
+            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10">
+              <h3 className="text-2xl font-bold text-white mb-2">Send Me a Message</h3>
+              <p className="text-gray-300 mb-8">
+                Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.
+              </p>
+              
+              <ContactForm />
+            </div>
+          </div>
         </div>
-        <div className='flex-1'>
-          <p>Email</p>
-          <p className='text-gray-400 break-all'>alihusnain7630@gmail.com</p>
+
+        {/* Availability Status */}
+        <div className="mt-16 bg-gradient-to-r from-purple-900/50 to-pink-800/50 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex items-center mb-4 md:mb-0">
+              <div className="w-4 h-4 bg-green-500 rounded-full mr-3 animate-pulse"></div>
+              <p className="text-white font-medium">Currently available for projects</p>
+            </div>
+            <a 
+              href="https://www.upwork.com/freelancers/~01b49b970f74de6174" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-lg font-semibold hover:shadow-purple-500/30 hover:scale-105 transition duration-300 flex items-center"
+            >
+              Hire Me on Upwork
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Footer Note */}
+        <div className="mt-12 text-center">
+          <p className="text-gray-400">
+            I typically respond to emails within 24 hours. For urgent matters, please call or message directly.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

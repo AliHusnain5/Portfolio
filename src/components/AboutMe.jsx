@@ -1,125 +1,197 @@
 import React from "react";
-import { FaDownload } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaCode, FaGraduationCap, FaBriefcase, FaAward } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiJavascript, SiTailwindcss, SiUpwork } from "react-icons/si";
 
 const AboutMe = () => {
+  const skills = [
+    { name: "MongoDB", icon: <SiMongodb className="text-green-500" />, level: 85 },
+    { name: "Express.js", icon: <SiExpress className="text-gray-800" />, level: 80 },
+    { name: "React", icon: <FaReact className="text-blue-400" />, level: 90 },
+    { name: "Node.js", icon: <FaNodeJs className="text-green-600" />, level: 85 },
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" />, level: 88 },
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" />, level: 87 },
+  ];
+
   return (
-    <div id="AboutMe" className="w-full py-10 px-4">
-      {/* Center wrapper */}
-      <div className="max-w-[1200px] mx-auto text-shadow-blue-300">
-        {/* Title */}
-        <div>
-        <span className="bg-black text-white w-fit flex justify-center items-center py-1 px-3 rounded-2xl gap-2">
-              <span>⭐</span>
-              About me
-            </span>
+    <section id="aboutme" className="min-h-screen py-16 px-4 md:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            About <span className="text-purple-400">Me</span>
+          </h2>
+          <div className="w-20 h-1 bg-purple-500 mx-auto"></div>
         </div>
 
-        {/* Heading */}
-        <div className="mt-5 sm:mt-7 ">
-          <h1 className="text-3xl sm:text-5xl lg:text-5xl ">
-            Crafting user-friendly <br /> interfaces with Mern Stack
-          </h1>
-        </div>
-
-        {/* Description + Info */}
-        <div className="flex flex-col md:flex-row justify-between gap-10 text-base sm:text-lg md:text-base mt-10">
-          <div className="leading-relaxed">
-            I'm a Front-End Developer with a passion for creating user-friendly, visually appealing websites. I specialize in building responsive, accessible web interfaces using HTML, CSS, and JavaScript. My focus lies in crafting intuitive and engaging user experiences through a combination of design and functionality. I'm a dedicated problem-solver, and always eager to learn and explore new technologies to enhance my skills.
-            <br /><br />
-            I'm eager to contribute my skills to projects that make a positive impact, and I'm always looking for opportunities to collaborate with talented designers and developers. I'm particularly enthusiastic about collaborating on projects that push creative boundaries and embrace innovation in web development.
-          </div>
-
-          {/* Info Grid */}
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col">
-              <span className="text-gray-300">Name</span>
-              Ali Husnain
-            </div>
-            <div className="flex flex-col">
-              <span className="text-gray-300">Phone</span>
-              +923094946763
-            </div>
-            <div className="flex flex-col">
-              <span className="text-gray-300">Email</span>
-              alihusnain7630@gmail.com
-            </div>
-            <div className="flex flex-col">
-              <span className="text-gray-300">Location</span>
-              Lahore
-            </div>
-          </div>
-        </div>
-
-        {/* Download Button */}
-        <div className="mt-10">
-          <button className="group relative overflow-hidden border bg-gray-700 border-white  sm:w-80 h-14 rounded-4xl text-base sm:text-lg font-medium  block">
-            <div className="h-28 flex flex-col transition-transform duration-300 group-hover:-translate-y-14">
-              <span className="h-14 flex items-center justify-center gap-2">
-                Download My Resume <FaDownload />
-              </span>
-              <span className="h-14 flex items-center justify-center gap-2">
-                Download My Resume <FaDownload />
-              </span>
-            </div>
-          </button>
-        </div>
-
-        {/* Cards */}
-        <div className="w-full flex flex-col lg:flex-row gap-10 mt-12">
-          {/* Card 1 */}
-          <div className="border-2 h-[500px] w-full lg:w-1/2 bg-slate-800 rounded-[40px] flex flex-col items-center justify-between p-6">
-            <div className="flex flex-col items-center space-y-6">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wider text-center">
-                Mern Stack Development
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
+          {/* Image Section */}
+          <div className="lg:w-2/5 flex justify-center">
+            <div className="relative">
+              <div className="w-64 h-64 md:w-80 md:h-80 bg-purple-500 rounded-full absolute -z-10 mt-4 ml-4"></div>
+              <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+                <img
+                  src="https://scontent.fkhi22-1.fna.fbcdn.net/v/t1.6435-9/69751898_1133899650333707_3597988021909061632_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHKF7STgwwYAxmrwA5lFWqZxnaV9bc-HUPGdpX1tz4dQ5cSyn7kBMCl_DZ_n20YkJ_vBMIDhCNCpst-sxKsVudG&_nc_ohc=m3chnhS9JMMQ7kNvwFA-XcI&_nc_oc=AdlkydAaPXr7DemOW-ayZHfbmgLB1uaHczuvhy5scwtUwW5RrvFI--2Kd4pmGKdnh4g&_nc_zt=23&_nc_ht=scontent.fkhi22-1.fna&_nc_gid=KL18K0sOtOpKtM3A79CBZA&oh=00_AfWbCccz1PGfnNdchlwH5RnU8DuZ3acKVyZndc8muX9sgQ&oe=68D35162"
+                  alt="Ali Husnain"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="flex gap-4 flex-wrap justify-center">
-                {["React", "Express", "MongoDB"].map((tech, index) => (
-                  <div key={index} className="border border-gray-400 text-white py-1 px-3 rounded-lg">
-                    {tech}
+            </div>
+          </div>
+
+          {/* Content Section */}
+          <div className="lg:w-3/5 text-white">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">
+              MERN Stack Developer & UI/UX Enthusiast
+            </h3>
+            
+            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+              I'm Ali Husnain, a passionate MERN Stack Developer based in Lahore, Pakistan. I hold a Bachelor's degree in Computer Science from Allama Iqbal Open University (AIOU) and completed my ICS from Lahore Board.
+            </p>
+            
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              I started my freelance journey on Upwork in 2025 and have gained one year of experience in building dynamic, responsive web applications. With a strong foundation in JavaScript and modern web technologies, I create efficient and scalable solutions that combine technical expertise with an eye for design.
+            </p>
+
+            <div className="grid grid-cols-2 gap-4 mb-10">
+              <div className="flex items-center">
+                <div className="mr-3 text-purple-400">
+                  <FaBriefcase className="text-xl" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Experience</h4>
+                  <p className="text-gray-400">1+ Year Freelance</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center">
+                <div className="mr-3 text-purple-400">
+                  <FaGraduationCap className="text-xl" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Education</h4>
+                  <p className="text-gray-400">Bachelors from AIOU</p>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <div className="mr-3 text-purple-400">
+                  <SiUpwork className="text-xl text-green-400" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Platform</h4>
+                  <p className="text-gray-400">Upwork Freelancer</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center">
+                <div className="mr-3 text-purple-400">
+                  <FaCode className="text-xl" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Projects</h4>
+                  <p className="text-gray-400">15+ Completed</p>
+                </div>
+              </div>
+            </div>
+
+            <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300">
+              Download CV
+            </button>
+          </div>
+        </div>
+
+        {/* Skills Section */}
+        <div className="mt-24">
+          <h3 className="text-3xl font-bold text-white text-center mb-12">
+            Technical <span className="text-purple-400">Skills</span>
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {skills.map((skill, index) => (
+              <div key={index} className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-purple-400/30 transition duration-300">
+                <div className="flex items-center mb-4">
+                  <div className="text-2xl mr-3">
+                    {skill.icon}
                   </div>
-                ))}
+                  <h4 className="text-lg font-semibold text-white">{skill.name}</h4>
+                  <span className="ml-auto text-white">{skill.level}%</span>
+                </div>
+                
+                <div className="w-full bg-gray-700 rounded-full h-2.5">
+                  <div 
+                    className="bg-gradient-to-r from-purple-600 to-pink-500 h-2.5 rounded-full" 
+                    style={{ width: `${skill.level}%` }}
+                  ></div>
+                </div>
               </div>
-              <div className="text-white text-center px-6">
-                I build dynamic and interactive websites using React, Express, and MongoDB.
-              </div>
-            </div>
-
-            <div
-              className="h-[300px] w-full bg-cover bg-center bg-no-repeat rounded-[30px]"
-              style={{
-                backgroundImage: `url("https://portfolio-fatimashehzadi.vercel.app/img/services/1200x900_s01.webp")`,
-              }}
-            ></div>
+            ))}
           </div>
+        </div>
 
-          {/* Card 2 */}
-          <div className="border-2 h-[500px] w-full lg:w-1/2 bg-white text-black rounded-[40px] flex flex-col items-center justify-between p-6">
-            <div className="flex flex-col items-center space-y-6">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-wider text-center">
-                Mern Stack Development
+        {/* Experience/Education Section */}
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <span className="bg-gradient-to-r from-purple-600 to-pink-500 p-2 rounded-lg mr-3">
+                <FaBriefcase />
+              </span>
+              Experience
+            </h3>
+            
+            <div className="pl-10 border-l-2 border-purple-500/30">
+              <div className="relative mb-8">
+                <div className="absolute -left-12 top-1 h-6 w-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <h4 className="text-xl font-semibold text-white">MERN Stack Developer</h4>
+                <p className="text-purple-400 flex items-center">
+                  <SiUpwork className="mr-2 text-green-400" />
+                  Upwork Freelance | 2025 - Present
+                </p>
+                <p className="text-gray-400 mt-2">
+                  Working with various clients to build full-stack web applications using MongoDB, Express.js, React, and Node.js. Specializing in creating responsive and efficient solutions.
+                </p>
               </div>
-              <div className="flex gap-4 flex-wrap justify-center">
-                {["React", "Express", "MongoDB"].map((tech, index) => (
-                  <div key={index} className="border border-gray-400 py-1 px-3 rounded-lg">
-                    {tech}
-                  </div>
-                ))}
-              </div>
-              <div className="text-center px-6">
-                I build dynamic and interactive websites using React, Express, and MongoDB.
+              
+              <div className="relative">
+                <div className="absolute -left-12 top-1 h-6 w-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <h4 className="text-xl font-semibold text-white">Frontend Developer</h4>
+                <p className="text-purple-400">Internship | 2024</p>
+                <p className="text-gray-400 mt-2">
+                  Developed user interfaces for web applications, implemented modern design principles, and collaborated with team members on project development.
+                </p>
               </div>
             </div>
-
-            <div
-              className="h-[300px] w-full bg-cover bg-center bg-no-repeat rounded-[30px]"
-              style={{
-                backgroundImage: `url("https://wallpaperbat.com/img/820056-mern-stack-wallpaper.jpg")`,
-              }}
-            ></div>
+          </div>
+          
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <span className="bg-gradient-to-r from-purple-600 to-pink-500 p-2 rounded-lg mr-3">
+                <FaGraduationCap />
+              </span>
+              Education
+            </h3>
+            
+            <div className="pl-10 border-l-2 border-purple-500/30">
+              <div className="relative mb-8">
+                <div className="absolute -left-12 top-1 h-6 w-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <h4 className="text-xl font-semibold text-white">Bachelor's in Computer Science</h4>
+                <p className="text-purple-400">Allama Iqbal Open University (AIOU) | 2020 - 2024</p>
+                <p className="text-gray-400 mt-2">
+                  Specialized in software development and web technologies. Graduated with focus on programming fundamentals and computer systems.
+                </p>
+              </div>
+              
+              <div className="relative">
+                <div className="absolute -left-12 top-1 h-6 w-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <h4 className="text-xl font-semibold text-white">ICS (Intermediate in Computer Science)</h4>
+                <p className="text-purple-400">Lahore Board | 2018 - 2020</p>
+                <p className="text-gray-400 mt-2">
+                  Completed with focus on programming fundamentals and computer systems. Built a strong foundation for further studies in computer science.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
