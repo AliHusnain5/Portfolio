@@ -36,7 +36,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter your name"
           />
         </div>
@@ -51,7 +51,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter your email"
           />
         </div>
@@ -67,13 +67,13 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="Tell me about your project..."
         ></textarea>
       </div>
       <button
         type="submit"
-        className="w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-lg font-semibold hover:shadow-purple-500/30 hover:scale-105 transition duration-300"
+        className="w-full py-3 px-6 bg-gradient-to-r from-blue-600 to-indigo-500 text-white rounded-lg font-semibold hover:shadow-blue-500/30 hover:scale-105 transition duration-300"
       >
         Send Message
       </button>

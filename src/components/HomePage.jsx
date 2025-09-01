@@ -102,11 +102,11 @@ const HomePage = () => {
       //       }}
     >
       {/* Sidebar */}
-      <div className="w-full md:w-1/3 flex justify-center  p-4 mt-3">
-        <div className="w-full max-w-[290px] bg-blue-300/10 rounded-[40px] flex flex-col items-center overflow-y-auto max-h-[95vh] p-4"
-        style={{
-              backgroundImage: `url("https://thfvnext.bing.com/th/id/OIP.MFrXIyB_WmbCoFBp3noaYgHaER?w=277&h=180&c=7&r=0&o=7&cb=thfvnext&dpr=1.3&pid=1.7&rm=3")`,
-            }}
+      <div className="w-full md:w-1/4 flex justify-center  p-4 mt-3">
+        <div className="w-full max-w-[270px] bg-gradient-to-b from-blue-900/30 to-slate-800/30 backdrop-blur-md rounded-[10px] flex flex-col items-center overflow-y-auto max-h-[95vh] p-4 border border-white/10 shadow-xl"
+        // style={{
+        //       backgroundImage: `url("https://thfvnext.bing.com/th/id/OIP.MFrXIyB_WmbCoFBp3noaYgHaER?w=277&h=180&c=7&r=0&o=7&cb=thfvnext&dpr=1.3&pid=1.7&rm=3")`,
+        //     }}
         >
           <div className="mt-4 flex flex-row items-center justify-center gap-4">
             <div className="flex items-center justify-center h-16 w-12 rounded-[40px] border-2 border-white">
@@ -119,8 +119,8 @@ const HomePage = () => {
 
           <div
             className="h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[180px] md:w-[230px] 
-mt-4 bg-cover bg-no-repeat rounded-[27px] 
-shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ring-emerald-400 hover:scale-105 transition duration-300 ease-in-out"
+mt-4 bg-cover bg-no-repeat rounded-[10px] 
+shadow-lg shadow-blue-400/30 ring-2 ring-blue-400/30 hover:ring-4 hover:ring-blue-400/50 hover:scale-105 transition duration-300 ease-in-out"
 
 
             style={{
@@ -261,82 +261,80 @@ shadow-lg shadow-emerald-400/80 ring-2 ring-emerald-400/70 hover:ring-4 hover:ri
         </div>
 
         {/* Hero Section */}
-        <div className="mt-[90px] flex flex-col h-400 justify-center" id="home">
-          <div>
-          <span className="bg-black text-white inline-flex justify-center items-center py-1 px-2 text-sm sm:text-lg rounded-4xl gap-2">
-            <span>⭐</span>
-            Let's meet!
-          </span>
-          </div>
+       {/* Hero Section */}
+<div className="mt-8 flex flex-col justify-center" id="home">
+  <div className="transition-all duration-700 transform">
+    <span className="bg-slate-800 text-white inline-flex justify-center items-center py-2 px-4 text-sm rounded-xl gap-2 border border-slate-700 shadow-md">
+      <span className="text-amber-400">⭐</span>
+      Let's collaborate!
+    </span>
+  </div>
 
-          <div className="mt-4 flex justify-between">
-      <div>
+  <div className="mt-8 flex flex-col md:flex-row justify-between items-start gap-8">
+    {/* Left Side Content */}
+    <div className="flex-1">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
+        I'm Ali Husnain
+      </h1>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-4 text-white">
+        MERN Stack <br />
+        <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          Developer
+        </span>
+      </h1>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium">
-              I'm Ali Husnain
-            </h1>
-            <h1 className="text-4xl sm:text-4xl md:text-6xl font-medium mt-2">
-              Mern Stack <br />
-              <span className="bg-green-500 inline-block px-2 rounded">Developer</span>
-            </h1>
+      {/* Professional summary */}
+      <p className="mt-6 text-lg text-slate-300 max-w-xl leading-relaxed">
+        Passionate about creating efficient, scalable web applications with cutting-edge technologies. 
+        Focused on delivering exceptional user experiences through clean code and innovative solutions.
+      </p>
+
+      {/* Call to action buttons */}
+      <div className="flex flex-wrap gap-4 mt-8">
+        <a
+          href="#portfolio"
+          className="bg-slate-800 hover:bg-slate-700 text-white font-medium py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300 border border-slate-600 hover:border-slate-500"
+        >
+          👨‍💻 View My Work
+        </a>
+        <a
+          href="https://drive.google.com/uc?export=download&id=1vKycvL64Cc3Fbd7nBIODOpUt0r5mGhvK"
+          rel="noopener noreferrer"
+          className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-lg flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-blue-500/30"
+        >
+          <FaDownload className="text-sm" />
+          Download CV
+        </a>
       </div>
-     {/* Major Projects */}
-      <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:scale-110">
-        <FaProjectDiagram className="text-green-400 text-5xl group-hover:text-green-300 transition-colors duration-300" />
-        <p className="text-lg text-white mt-2">Major Projects</p>
-        <p className="font-bold text-green-400 text-xl group-hover:scale-110 transition-transform duration-300">
+    </div>
+
+    {/* Right Side Stats */}
+    <div className="flex gap-6 mt-6 md:mt-0">
+      {/* Major Projects */}
+      <div className="flex flex-col items-center group cursor-pointer p-5 bg-slate-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-700 hover:border-slate-600">
+        <div className="p-3 bg-slate-700/50 rounded-full mb-3 group-hover:bg-emerald-900/30 transition-colors duration-300">
+          <FaProjectDiagram className="text-emerald-400 text-3xl group-hover:text-emerald-300 transition-colors duration-300" />
+        </div>
+        <p className="text-sm text-slate-300 mt-2">Major Projects</p>
+        <p className="font-bold text-emerald-400 text-xl group-hover:scale-110 transition-transform duration-300">
           5+
         </p>
       </div>
 
       {/* Mini Projects */}
-      <div className="flex flex-col items-center group cursor-pointer transition-transform duration-300 hover:scale-110">
-        <FaLaptopCode className="text-blue-400 text-5xl group-hover:text-blue-300 transition-colors duration-300" />
-        <p className="text-lg text-white mt-2">Mini Projects</p>
+      <div className="flex flex-col items-center group cursor-pointer p-5 bg-slate-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-700 hover:border-slate-600">
+        <div className="p-3 bg-slate-700/50 rounded-full mb-3 group-hover:bg-blue-900/30 transition-colors duration-300">
+          <FaLaptopCode className="text-blue-400 text-3xl group-hover:text-blue-300 transition-colors duration-300" />
+        </div>
+        <p className="text-sm text-slate-300 mt-2">Mini Projects</p>
         <p className="font-bold text-blue-400 text-xl group-hover:scale-110 transition-transform duration-300">
           10+
         </p>
       </div>
-          </div>
-
-
-   <div className="flex justify-center md:justify-end w-full p-4 mt-20">
-  
-        {/* Buttons */}
-          <div className="flex flex-wrap w-200 gap-4 items-end ">
-            
-            <button className="group relative overflow-hidden border border-white w-full sm:w-40 h-12 rounded-4xl text-lg font-medium">
-              <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
-                <span className="h-12 flex items-center justify-center gap-2">👨‍💻 My Work</span>
-                <span className="h-12 flex items-center justify-center gap-2">👨‍💻 My Work</span>
-              </div>
-            </button>
-
-            <a href="https://drive.google.com/uc?export=download&id=1vKycvL64Cc3Fbd7nBIODOpUt0r5mGhvK
-"   
-  rel="noopener noreferrer">
-      <button className="group relative overflow-hidden w-full sm:w-40 h-12 rounded-4xl text-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors">
-        <div className="h-24 flex flex-col transition-transform duration-300 group-hover:-translate-y-12">
-          <span className="h-12 flex items-center justify-center gap-2">
-            Download CV <FaDownload />
-          </span>
-          <span className="h-12 flex items-center justify-center gap-2">
-            Download CV <FaDownload />
-          </span>
-        </div>
-      </button>
-    </a>
-          </div>
-
-
+    </div>
+  </div>
 </div>
 
-
-
-    
-
-
-        </div>
 
         {/* Other Sections */}
         <div className="mt-20">
