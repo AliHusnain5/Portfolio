@@ -124,7 +124,7 @@ shadow-lg shadow-blue-400/30 ring-2 ring-blue-400/30 hover:ring-4 hover:ring-blu
 
 
             style={{
-              backgroundImage: `url("https://scontent.fkhi22-1.fna.fbcdn.net/v/t1.6435-9/69751898_1133899650333707_3597988021909061632_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHKF7STgwwYAxmrwA5lFWqZxnaV9bc-HUPGdpX1tz4dQ5cSyn7kBMCl_DZ_n20YkJ_vBMIDhCNCpst-sxKsVudG&_nc_ohc=m3chnhS9JMMQ7kNvwFA-XcI&_nc_oc=AdlkydAaPXr7DemOW-ayZHfbmgLB1uaHczuvhy5scwtUwW5RrvFI--2Kd4pmGKdnh4g&_nc_zt=23&_nc_ht=scontent.fkhi22-1.fna&_nc_gid=KL18K0sOtOpKtM3A79CBZA&oh=00_AfWbCccz1PGfnNdchlwH5RnU8DuZ3acKVyZndc8muX9sgQ&oe=68D35162")`,
+              backgroundImage: `url("https://scontent.fkhi17-2.fna.fbcdn.net/v/t1.6435-9/89949436_1328532744203729_6223117194805379072_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=106&ccb=1-7&_nc_sid=714c7a&_nc_eui2=AeF10oaGgzT7LkvI9Q5dYuV5IkyXPfn6wagiTJc9-frBqKwng_lcQJWZIMeZ7lCj139XHheKo3FfptqzUtTIAVXw&_nc_ohc=Gb41NsYAnYMQ7kNvwFptkt1&_nc_oc=Adm2lv4fWDH4wrm_chT4aUeM6pPsfTj2yuJyAKJ2fpcjZ2XipH_HF4lNPMSkocak5Yw&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=GoBbctC2HRVEFyucpAaohg&oh=00_AfXtb2Vz0xV-0Celc9zBgx_bZyvbchJ-2Okb9IJRjXuiuA&oe=68DC9039")`,
             }}
           ></div>
 
