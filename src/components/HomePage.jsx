@@ -190,7 +190,7 @@ shadow-lg shadow-blue-400/30 ring-2 ring-blue-400/30 hover:ring-4 hover:ring-blu
       </div>
 
       {/* Right Content */}
-      <div className="relative w-full md:w-3/4 flex mx-auto flex-col px-4 pt-[72px] md:pt-[88px] overflow-y-auto max-h-screen">
+      <div className="relative w-full md:w-3/4 flex mx-auto flex-col px-4 pt-[72px] md:pt-[88px] md:overflow-y-auto md:max-h-screen">
 
         {/* Mobile Navbar */}
         <div className="md:hidden fixed top-147 ml-5 rounded-4xl py-2 w-[80%] bg-black/30 backdrop-blur-md">
